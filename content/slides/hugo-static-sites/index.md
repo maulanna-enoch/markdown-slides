@@ -9,11 +9,6 @@ course: "CS 101: Web Development"
 lecture_number: 5
 type: slides
 
-# HugoBlox standard links structure
-links:
-  - type: video
-    url: "https://youtube.com/watch?v=example"
-    icon: hero/video-camera
 
 slides:
   theme: white
