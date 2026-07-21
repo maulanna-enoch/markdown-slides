@@ -192,7 +192,6 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 <div style="flex: 1; padding-left: 1rem;">
 
 [Let me show you](https://app.achilles.id/global-settings/settings/manage-api-keys)
-{class="reveal-link-button" style="font-weight: bold; text-decoration: underline;"}
 
 </div>
 
