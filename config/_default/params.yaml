@@ -137,7 +137,6 @@ hugoblox:
 
 # Link configuration for slide decks and publications
 links:
-  # Define custom link types if needed
   custom:
     - id: preprint
       name: Preprint
@@ -145,4 +144,6 @@ links:
     - id: code
       name: Code
       icon: hero/outline/code-bracket
-
+    - id: video
+      name: Video
+      icon: hero/outline/video-camera
