@@ -87,6 +87,7 @@ This document highlights three categories: Payment Channel coverage, Dashboard U
 ---
 
 ## Payment Channel Coverage
+(1 of 2)
 
 <div class="r-hstack">
 
@@ -118,7 +119,8 @@ It is understood that Achilles/OnlinePajak has a more tax-compliance-focused mes
 
 ---
 
-## Payment Channel Coverage (2)
+## Payment Channel Coverage 
+(2 of 2)
 
 <div class="r-hstack">
 
@@ -170,8 +172,8 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 
 ---
 
-## Dashboard UI Reliability (1 of 3)
-Demo environment buried in navigation + broken onboarding flow
+## Dashboard UI Reliability 
+(1 of 3) Demo environment buried in navigation + broken onboarding flow
 
 <div class="r-hstack">
 
@@ -182,7 +184,7 @@ Demo environment buried in navigation + broken onboarding flow
 - OTP verification (email/phone) breaks (no way to onboard)
   - Workaround: clicking "back" during onboarding grants demo access _without being logged in_ (hacky? lucky?)
 
-`[(kinda hope you haven't fixed it)Let me show you:](https://app.achilles.id/global-settings/settings/manage-api-keys)`
+[(kinda hope you haven't fixed it)Let me show you:](https://app.achilles.id/global-settings/settings/manage-api-keys)
 
 
 </div>
