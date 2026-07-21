@@ -43,13 +43,11 @@ header:
 
 **by: Maulanna Maryunani**
 
-![](https://picsum.photos/800/600)
-
 ---
 
 ## Executive Summary
 
-- Walked through Achilles platform, from onboarding to invoice creation
+- Existing system's analysis is based on walking through Achilles platform's onboarding flow up until attempted invoice creation
 - Found friction points on:
   - payment channel coverage,
   - dashboard UI reliability,
@@ -72,9 +70,9 @@ Finally, it addresses the open questions and risks from following this document,
 
 ## Problem & Opportunity Framing
 
-- Walked through Achilles onboarding (registration → registered user) and payment creation flow
-- Caveat: did not complete Coretax passphrase verification and mapping
-- Exploration surfaced friction across three categories:
+- I walked through Achilles onboarding (registration → registered user) and invoice creation flow
+  - _caveat: I did not complete Coretax passphrase verification, so I couldn't create invoice in production_
+- Exploration surfaced friction categorized by:
   - Payment Channel coverage
   - Dashboard UI reliability
   - API documentation issues
@@ -90,12 +88,13 @@ Each of these will add friction to users looking to have a completed transaction
 
 ---
 
-## Payment Channel Coverage Gaps
+## Payment Channel Coverage
 
-- Channels today: **cards and VA only** — below table stakes for a payment aggregator
+- Channels today: **cards and VA only** — below table stakes compared to a payment aggregator platform
 - Missing: fee-free bank transfer, QRIS, bulk/partial supplier payment support
-- Creating a payment is unexpectedly gated behind Coretax passphrase verification
-- Demo environment exists but is buried in settings, requiring a second registration
+- Creating a payment is gated behind Coretax passphrase verification
+  - (expected from a tax compliance POV, but adds friction for users trying the product out)
+- Demo environment exists but is buried in settings --> API key settings
 
 ![](https://picsum.photos/800/600)
 
