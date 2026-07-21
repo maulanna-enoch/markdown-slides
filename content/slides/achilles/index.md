@@ -47,7 +47,7 @@ header:
 
 ---
 
-# Executive Summary
+## Executive Summary
 
 - Walked through Achilles platform, from onboarding to invoice creation
 - Found friction points: payment channel coverage, dashboard UI reliability, API docs
@@ -66,7 +66,7 @@ Finally, it addresses the open questions and risks from following this document,
 
 ---
 
-# Problem & Opportunity Framing
+## Problem & Opportunity Framing
 
 - Walked through Achilles onboarding (registration → registered user) and payment creation flow
 - Caveat: did not complete Coretax passphrase verification and mapping
@@ -84,7 +84,7 @@ Each of these will add friction to users looking to have a completed transaction
 
 ---
 
-# Payment Channel Coverage Gaps
+## Payment Channel Coverage Gaps
 
 - Channels today: **cards and VA only** — below table stakes for a payment aggregator
 - Missing: fee-free bank transfer, QRIS, bulk/partial supplier payment support
@@ -100,7 +100,7 @@ While it is expected that some limitation appears before verification, my point 
 
 ---
 
-# Dashboard UI Reliability
+## Dashboard UI Reliability
 
 - Exploration surfaced breakage and confusing UI, breaking flows for users
 - Empty support page: support.achilles.id
@@ -112,7 +112,7 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 
 ---
 
-# OAuth Domain Redirect Bug
+## OAuth Domain Redirect Bug
 
 ```mermaid
 flowchart LR
@@ -130,7 +130,7 @@ Google sign-in on app.online-pajak.com completes the OAuth handshake but then re
 
 ---
 
-# Demo Environment Friction
+## Demo Environment Friction
 
 - Not surfaced in primary navigation — buried three levels deep in Settings
 - Peer products (DanaraPay, Xendit) make Demo Mode highly visible
@@ -158,7 +158,7 @@ Secondly, clicking through goes through an onboarding flow which breaks because 
 
 ---
 
-# API Documentation: Tax Compliance Strength
+## API Documentation: Tax Compliance Strength
 
 - developer.achilles.id is a serviceable source for tax-compliance integrations
 - Real Getting Started guide: API keys (sandbox/prod), webhooks, CTAS/Coretax signatory setup
@@ -185,7 +185,7 @@ Mekari Klikpajak's API docs cover a narrower e-Faktur/e-Bupot/e-Billing/NPWP-val
 
 ---
 
-# API Documentation: Payment Gaps
+## API Documentation: Payment Gaps
 
 - Xendit's payment API docs: broader channels (VA, QRIS, cards, e-wallet), bulk + UI/no-UI checkouts, refunds/returns covered
 - Achilles docs: one payment endpoint, leads to a waitlist (unclear if live)
@@ -203,7 +203,7 @@ Until this gap to a payments-first platform is closed, it's reasonable to assume
 
 ---
 
-# What Success Looks Like
+## What Success Looks Like
 
 - Success defined by narrative + key metrics, per time horizon
 - **Now** (0–3 months), **Next** (3–6 months), **Later** (6–12 months)
@@ -214,7 +214,7 @@ To decide what to improve in the Achilles platform, this document defines what s
 
 ---
 
-# Success: Now (0–3 months)
+## Success: Now (0–3 months)
 
 - Improved onboarding flows and documentation
 - Conversion of self-onboarded merchants to first invoice creation
@@ -228,7 +228,7 @@ Key metrics: onboard completion rate; dashboard engagement (login rate, monthly/
 
 ---
 
-# Success: Next (3–6 months)
+## Success: Next (3–6 months)
 
 - Payment flow (dashboard + APIs), channels, and options match payment-industry norms
 - Growing number of sales invoice creations and payment completions
@@ -238,7 +238,7 @@ Key metrics: rate of onboarded users to invoice created rate; paid invoices rate
 
 ---
 
-# Success: Later (6–12 months)
+## Success: Later (6–12 months)
 
 - Experiment with niche long-tail payment options (BNPL, cross-border)
 - Growing take rate of invoice payments via better vendor pricing
@@ -248,7 +248,7 @@ Key metrics: all metrics discussed in the previous phases, plus take rate per co
 
 ---
 
-# Mini-Roadmap
+## Mini-Roadmap
 
 - Laundry list of initiatives generated pre-prioritization
 - Then run through a prioritization process (RICE, for this exercise)
@@ -279,7 +279,7 @@ To achieve each narrative of success, these initiatives are proposed, with a "la
 
 ---
 
-# Laundry List: Now (0–3 months)
+## Laundry List: Now (0–3 months)
 
 - Fix Google login failure on OnlinePajak domain
 - Improve sandbox/demo visibility; remove re-onboarding after prod onboarding
@@ -295,7 +295,7 @@ Rationale & metrics moved:
 
 ---
 
-# Laundry List: Next (3–6 months)
+## Laundry List: Next (3–6 months)
 
 - New payment channels: e-wallet, cards, bank transfer via unique code (reduce VA dependency)
 - Support partial end-user payments, opt-in per invoice (unclear if already supported)
@@ -309,7 +309,7 @@ Rationale & metrics moved:
 
 ---
 
-# Laundry List: Later (6–12 months)
+## Laundry List: Later (6–12 months)
 
 - Better vendor integrations/relationships for improved take rate
 - Migrate from payment aggregator integrations to H2H for VAs
@@ -323,7 +323,7 @@ Rationale & metrics moved:
 
 ---
 
-# Prioritization: RICE
+## Prioritization: RICE
 
 - RICE = Reach × Impact × Confidence ÷ Effort
 - **Reach**: % of business impacted (e.g., Google Login fix reaches ~35% of users still on old domain using Google login)
@@ -338,7 +338,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# RICE Scores: Now-tier Items
+## RICE Scores: Now-tier Items
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -350,7 +350,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# RICE Scores: Next-tier Items
+## RICE Scores: Next-tier Items
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -362,7 +362,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# RICE Scores: Later-tier Items
+## RICE Scores: Later-tier Items
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -375,7 +375,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# Sample Experiments
+## Sample Experiments
 
 - Two experiments proposed to validate roadmap hypotheses
 - Experiment 1: Removing the Coretax Passphrase Verification gate
@@ -385,7 +385,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# Experiment 1: Remove Coretax Passphrase Gate
+## Experiment 1: Remove Coretax Passphrase Gate
 
 - **Hypothesis**: Removing/deferring the e-Faktur certificate verification gate from the payment flow increases invoice creation rate
 - **Method**: A/B test — route a subset of onboarded users through a streamlined flow that defers certificate verification until after invoice creation
@@ -393,7 +393,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# Experiment 2: Bank Transfer via Unique Code
+## Experiment 2: Bank Transfer via Unique Code
 
 - **Hypothesis**: A fee-free "transfer with unique code" option increases payment volume among SME/long-tail customers who default to bank transfer over card or VA
 - **Method**: Segmented/whitelisted rollout — enable fee-free bank transfer for a cohort of SME accounts (by NPWP segment), matched control cohort on current VA/card-only flow, compared over 6–8 weeks
@@ -401,7 +401,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-# Risks & Open Questions
+## Risks & Open Questions
 
 - **Company strategy risk**: does a payments-heavy roadmap fit OnlinePajak's broader "break through" payments strategy?
 - **Compliance risk**: could initiatives (e.g. pre-verification invoicing) harm standing with DJP/regulators? (critical)
@@ -423,7 +423,7 @@ Branding/positioning risk: The initiatives listed here do not have improvements 
 
 ---
 
-# Appendix
+## Appendix
 
 - **11.1** Full Dashboard UX Friction Log (15 items, tested by Claude AI)
 - **11.2** Full Mekari Comparison (generated via Claude AI)
@@ -436,7 +436,7 @@ Note:
 
 ---
 
-# External References
+## External References
 
 - OnlinePajak/Achilles Dashboard: app.onlinepajak.com
 - Achilles Open API Docs: developer.achilles.id
