@@ -55,7 +55,7 @@ header:
 - Proposes a prioritized mini-roadmap with RICE scoring
 - Closes with open questions and risks (external perspective caveat)
 
-Note:
+{{% speaker_note %}}
 This document discusses the problems within payment channel coverage, dashboard UI reliability, and support and API docs issues found while walking through the existing Achilles platform and capabilities from onboarding up to invoice creation (attempts).
 
 It attempts to define success in phases of time horizons, focusing on improved onboarding flows and more payment channels/methods, to increase transaction numbers and eventually OnlinePajak/Achilles' monetization and take rate of transactions.
@@ -63,7 +63,7 @@ It attempts to define success in phases of time horizons, focusing on improved o
 It also proposes a mini-roadmap consisting of a prioritized "laundry-list" of initiatives, and proposes some hypotheses and methods of experimentation relating to the roadmap.
 
 Finally, it addresses the open questions and risks from following this document, as it's purely done from an external's perspective.
-
+{{% /speaker_note %}}
 ---
 
 ## Problem & Opportunity Framing
