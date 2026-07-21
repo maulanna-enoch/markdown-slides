@@ -10,15 +10,6 @@ event: "International Conference on Machine Learning"
 citation: "Researcher, E., Smith, J., & Doe, J. (2025). Machine Learning Research Overview. ICML 2025."
 type: slides
 
-# HugoBlox standard links structure
-links:
-  - type: preprint
-    url: "https://arxiv.org/abs/example"
-    icon: hero/document-text
-  - type: code
-    url: "https://github.com/example/ml-research"
-    icon: hero/code-bracket
-
 # HugoBlox standard identifiers - auto-generates DOI link
 hugoblox:
   ids:
