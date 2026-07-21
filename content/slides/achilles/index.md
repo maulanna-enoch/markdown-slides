@@ -147,9 +147,9 @@ While it is expected that some limitation appears before verification, my point 
 
 ## Dashboard UI Reliability
 
-- Exploration surfaced breakage and confusing UI, breaking flows for users
-- Empty support page: support.achilles.id
-- Google OAuth domain redirect bug (online-pajak.com ↔ app.achilles.id)
+Exploration surfaced breakage and confusing UI, breaking flows for users
+- Empty support page (support.achilles.id)
+- Google OAuth domain redirect bug (for app.online-pajak.com)
 - Demo environment: buried in navigation + broken onboarding step
 
 {{% speaker_note %}}
