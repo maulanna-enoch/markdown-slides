@@ -202,6 +202,43 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 
 ---
 
+## Dashboard UI Reliability 
+(2 of 3) Breaking "Login with Google" if using app.online-pajak.com domain
+
+<div class="r-hstack">
+
+<div style="flex: 1; padding-right: 1rem;">
+
+If a user visits the dashboard via OnlinePajak domain (app.online-pajak.com) and signs in via Google, the completed sign-in doesn't redirect to Achilles dashboard, it loops back to OnlinePajak domain's login page.
+
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+
+  ```mermaid
+flowchart LR
+    A[User visits app.online-pajak.com] --> B[Clicks Google Sign-in]
+    B --> C[OAuth handshake completes]
+    C --> D[Redirects back to login page]
+    D --> B
+    D -.manual workaround.-> E[Navigate directly to app.achilles.id/home]
+    E --> F[Authenticated dashboard]
+    style D fill:#f88,stroke:#900
+    style F fill:#8f8,stroke:#090
+```
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+
+
+{{% speaker_note %}}
+Note:
+I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
+{{% /speaker_note %}}
+
+
+---
+
 ## OAuth Domain Redirect Bug
 
 ```mermaid
