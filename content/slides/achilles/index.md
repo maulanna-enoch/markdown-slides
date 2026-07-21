@@ -186,12 +186,11 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
   - Peer payment-focused products (Xendit, DanaraPay) make Demo Mode highly visible
 - OTP verification (email/phone) breaks (no way to onboard)
   - Workaround: clicking "back" during onboarding grants demo access _without being logged in_ (hacky? lucky?)
-  - [Let me show you](https://app.achilles.id/global-settings/settings/manage-api-keys)
-
 
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
+  [Let me show you](https://app.achilles.id/global-settings/settings/manage-api-keys)
 </div>
 
 </div>
