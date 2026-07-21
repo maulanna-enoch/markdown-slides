@@ -1,5 +1,5 @@
 ---
-title: "Achilles (OnlinePajak): Strategy for Growth in Onboarding and Payment/Checkout Flows"
+title: "Achilles Strategy for Growth in Onboarding and Payment"
 date: 2026-07-21
 description: "Strategy proposal for improving onboarding and payment/checkout flows on the Achilles platform"
 authors: ["Maulanna Maryunani"]
@@ -26,20 +26,20 @@ slides:
     
     # TITLE OVERLAY: Show presentation title on every slide
     title:
-      show: true                    # Set to false to hide
+      show: false                    # Set to false to hide
       position: "bottom-left"       # Options: top-left, top-right, bottom-left, bottom-right
     
     # FOOTER TEXT: Display copyright, conference name, etc.
     footer:
-      text: "© 2026 HugoBlox"       # Supports Markdown (e.g., links)
-      position: "bottom-center"     # Options: top-left, top-right, bottom-left, bottom-right, bottom-center
+      text: "for Achilles' use"       # Supports Markdown (e.g., links)
+      position: "bottom-right"     # Options: top-left, top-right, bottom-left, bottom-right, bottom-center
 
 header:
   theme_picker: true
 ---
 
 # Achilles (OnlinePajak)
-## Strategy for Growth in Onboarding and Payment/Checkout Flows
+### Strategy for Growth in Onboarding and Payment
 
 **by: Maulanna Maryunani**
 
