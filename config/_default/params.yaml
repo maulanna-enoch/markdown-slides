@@ -134,3 +134,15 @@ hugoblox:
     # Get Premium: https://hugoblox.com/premium
     hide_attribution: false
     affiliate_code: ""
+
+# Link configuration for slide decks and publications
+links:
+  # Define custom link types if needed
+  custom:
+    - id: preprint
+      name: Preprint
+      icon: hero/outline/document-text
+    - id: code
+      name: Code
+      icon: hero/outline/code-bracket
+
