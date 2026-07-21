@@ -6,7 +6,7 @@ authors: ["Maulanna Maryunani"]
 featured: true
 type: slides
 slides:
-  theme: black  # Options: black, white, league, beige, sky, night, serif, simple, solarized
+  theme: simple  # Options: black, white, league, beige, sky, night, serif, simple, solarized
   highlight_style: dracula  # Code syntax highlighting theme
   diagram: true  # Enable Mermaid diagrams for flowcharts, etc.
   reveal_options:
@@ -14,7 +14,6 @@ slides:
     progress: true      # Show progress bar
     slideNumber: true   # Show slide numbers
     hash: true          # Update URL when navigating slides
-
 
   # BRANDING: Add logo, title overlay, and footer to your presentation
   # All settings are optional - remove any you don't need
