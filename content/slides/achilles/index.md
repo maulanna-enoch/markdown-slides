@@ -31,7 +31,7 @@ slides:
     
     # FOOTER TEXT: Display copyright, conference name, etc.
     footer:
-      text: "for Achilles' use"       # Supports Markdown (e.g., links)
+      text: ""       # Supports Markdown (e.g., links)
       position: "bottom-right"     # Options: top-left, top-right, bottom-left, bottom-right, bottom-center
 
 header:
@@ -51,9 +51,9 @@ header:
 
 - Walked through Achilles platform, from onboarding to invoice creation
 - Found friction points: payment channel coverage, dashboard UI reliability, API docs
-- Goal: define success by time horizon, focused on onboarding + payment channels
-- Proposes a prioritized mini-roadmap with RICE scoring
-- Closes with open questions and risks (external perspective caveat)
+- Proposed "what success looks like" (inc. narrative and metrics)
+- Proposed a prioritized mini-roadmap with RICE scoring
+- Closes with open questions and risks
 
 {{% speaker_note %}}
 This document discusses the problems within payment channel coverage, dashboard UI reliability, and support and API docs issues found while walking through the existing Achilles platform and capabilities from onboarding up to invoice creation (attempts).
@@ -64,6 +64,7 @@ It also proposes a mini-roadmap consisting of a prioritized "laundry-list" of in
 
 Finally, it addresses the open questions and risks from following this document, as it's purely done from an external's perspective.
 {{% /speaker_note %}}
+
 ---
 
 ## Problem & Opportunity Framing
@@ -75,12 +76,16 @@ Finally, it addresses the open questions and risks from following this document,
   - Dashboard UI reliability
   - API documentation issues
 
+{{% speaker_note %}}
+
 Note:
 To understand the existing Achilles platform and capabilities, I walked through the Achilles onboarding flow (registration up until becoming a registered user) and payment creation flow. (Caveat: I didn't manage to do the Coretax passphrase verification and mapping.)
 
 The exploration surfaced rooms for improvement to the platform. Prioritizing clarity over completeness, this document highlights three categories: Payment Channel coverage, Dashboard UI reliability, and API documentation issues.
 
 Each of these will add friction to users looking to have a completed transaction and paid invoices.
+
+{{% /speaker_note %}}
 
 ---
 
@@ -124,9 +129,10 @@ flowchart LR
     style D fill:#f88,stroke:#900
     style F fill:#8f8,stroke:#090
 ```
-
+{{% speaker_note %}}
 Note:
 Google sign-in on app.online-pajak.com completes the OAuth handshake but then redirects back to the login page instead of into the app; users need to navigate directly to app.achilles.id/home to land on the authenticated dashboard. This will be significant for users who only remember the dashboard as "OnlinePajak" and not "Achilles."
+{{% /speaker_note %}}
 
 ---
 
@@ -150,11 +156,12 @@ flowchart TD
     style F fill:#f88,stroke:#900
     style H fill:#8f8,stroke:#090
 ```
-
+{{% speaker_note %}}
 Note:
 First, the demo isn't surfaced anywhere in primary navigation but instead in Pengaturan → Pengaturan Integrasi → API Key → "Coba Akun Demo." This dramatically reduces conversion of users wanting to see the value of the service. In similar services to OnlinePajak/Achilles — DanaraPay and Xendit, though both are more focused on payment aggregation without emphasis on tax compliance — it's table stakes to have Demo Mode highly visible.
 
 Secondly, clicking through goes through an onboarding flow which breaks because it needs OTP verification through email and phone, which may or may not have been implemented in demo (I personally haven't been able to receive OTP in demo). Demo can actually be accessed if one clicks "back" on onboarding, but it should have been easier — I personally was able to access the demo by pure luck.
+{{% /speaker_note %}}
 
 ---
 
@@ -177,11 +184,12 @@ sequenceDiagram
     B->>O: Payment
     O->>S: Confirmation & tax filing status
 ```
-
+{{% speaker_note %}}
 Note:
 Achilles's public developer docs (developer.achilles.id) are already a serviceable source for integrations aiming for better tax-compliance integration. In my opinion it is a more complete API documentation than Mekari KlikPajak, another platform with tax compliance objectives.
 
 Mekari Klikpajak's API docs cover a narrower e-Faktur/e-Bupot/e-Billing/NPWP-validation surface with no comparable getting-started walkthrough.
+{{% /speaker_note %}}
 
 ---
 
@@ -194,12 +202,14 @@ Mekari Klikpajak's API docs cover a narrower e-Faktur/e-Bupot/e-Billing/NPWP-val
 
 ![](https://picsum.photos/800/600)
 
+{{% speaker_note %}}
 Note:
 Payment and checkout still has gaps especially when compared to a payments-first platform like Xendit. Xendit Payment API docs have broader channels (VA, QRIS, cards, e-wallet, in single transaction and bulk, with and without UI payment checkouts), and also cover more edge cases (refunds/returns).
 
 OnlinePajak/Achilles's API docs currently only have one payment endpoint which eventually leads to a waitlist (unconfirmed if the API has already gone live). No documented endpoint for refunds and channel-specific parameters.
 
 Until this gap to a payments-first platform is closed, it's reasonable to assume payment collections will need to be off-product, which reduces quality of data and creates friction to the supposed ease of tax compliance as well.
+{{% /speaker_note %}}
 
 ---
 
@@ -209,8 +219,10 @@ Until this gap to a payments-first platform is closed, it's reasonable to assume
 - **Now** (0–3 months), **Next** (3–6 months), **Later** (6–12 months)
 - Horizon splits are ballpark estimates based on rough effort
 
+{{% speaker_note %}}
 Note:
 To decide what to improve in the Achilles platform, this document defines what success looks like, providing narrative and key metrics, divided by rough time horizon phases (Now, Next, or Later). Division of Now/Next/Later narratives are based on ballpark estimates of which milestones can come earlier (by rough effort estimation).
+{{% /speaker_note %}}
 
 ---
 
@@ -223,8 +235,10 @@ To decide what to improve in the Achilles platform, this document defines what s
 
 ![](https://picsum.photos/800/600)
 
+{{% speaker_note %}}
 Note:
 Key metrics: onboard completion rate; dashboard engagement (login rate, monthly/weekly/daily active) per user; rate of onboarded users to invoice created rate; paid invoices rate; invoices created-to-paid within system rate.
+{{% /speaker_note %}}
 
 ---
 
