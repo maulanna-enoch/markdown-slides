@@ -14,7 +14,7 @@ sections:
         Write in Markdown, present anywhere, share with anyone.
       primary_action:
         text: Browse Decks
-        url: '/slides/'
+        url: '/markdown-slides/slides/'
         icon: play
       secondary_action:
         text: Create Your Own
