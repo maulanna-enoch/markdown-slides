@@ -51,9 +51,9 @@ header:
 
 - Walked through Achilles platform, from onboarding to invoice creation
 - Found friction points on:
- - payment channel coverage,
- - dashboard UI reliability,
- - API docs
+  - payment channel coverage,
+  - dashboard UI reliability,
+  - API docs
 - Proposed "what success looks like" (inc. narrative and metrics)
 - Proposed a prioritized mini-roadmap with RICE scoring
 - Closes with open questions and risks
@@ -466,22 +466,10 @@ Branding/positioning risk: The initiatives listed here do not have improvements 
 
 ---
 
-## Appendix
+## Appendix + References
 
-- **11.1** Full Dashboard UX Friction Log (15 items, tested by Claude AI)
-- **11.2** Full Mekari Comparison (generated via Claude AI)
-- **11.3** External references (dashboards, API docs, RICE frameworks)
-
-Note:
-11.1 Full friction audit in the OnlinePajak/Achilles dashboard flow (15 items, tested by Claude AI): https://docs.google.com/document/d/12DxH7dQAMiKOFI9N4CU7GVJz_lxHZTX2uBXSe1BHcNI/edit
-
-11.2 Full Mekari competitive/API profile (generated via Claude AI): https://docs.google.com/document/d/1fXiBARn3sIG69IFAaGRFcM5g4h6L8hqCJlP2TDzB_Eg/edit
-
----
-
-## External References
-
-- OnlinePajak/Achilles Dashboard: app.onlinepajak.com
+- Full friction audit in the OnlinePajak/Achilles dashboard flow (15 items, tested by Claude AI): https://docs.google.com/document/d/12DxH7dQAMiKOFI9N4CU7GVJz_lxHZTX2uBXSe1BHcNI/edit
+- Full Mekari competitive/API profile (generated via Claude AI): https://docs.google.com/document/d/1fXiBARn3sIG69IFAaGRFcM5g4h6L8hqCJlP2TDzB_Eg/edit
 - Achilles Open API Docs: developer.achilles.id
 - Klikpajak Public API v1 (Postman)
 - Xendit API Reference: developers.xendit.co
