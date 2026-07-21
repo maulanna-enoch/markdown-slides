@@ -99,11 +99,13 @@ Each of these will add friction to users looking to have a completed transaction
 
 ![](https://picsum.photos/800/600)
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 It is understood that Achilles/OnlinePajak has a more tax-compliance-focused message vs. other payment players, but not having coverage in payment channels can discourage invoice completion within the platform, and will eventually defeat the "tax compliance with convenience" message.
 
 While it is expected that some limitation appears before verification, my point of view is that it's important for a (prospective) user to be able to experience the whole flow, even if only in the demo environment (currently buried in the settings page and requiring a second registration). This is especially true for the long-tail SME market, which probably has document completeness as a more potent friction point.
+{{% /speaker_note %}}
+
 
 ---
 
@@ -114,9 +116,11 @@ While it is expected that some limitation appears before verification, my point 
 - Google OAuth domain redirect bug (online-pajak.com ↔ app.achilles.id)
 - Demo environment: buried in navigation + broken onboarding step
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
+{{% /speaker_note %}}
+
 
 ---
 
@@ -250,9 +254,11 @@ Key metrics: onboard completion rate; dashboard engagement (login rate, monthly/
 - Payment flow (dashboard + APIs), channels, and options match payment-industry norms
 - Growing number of sales invoice creations and payment completions
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 Key metrics: rate of onboarded users to invoice created rate; paid invoices rate; invoices created-to-paid within system rate; payment channel mix (VA vs. card vs. QRIS).
+{{% /speaker_note %}}
+
 
 ---
 
@@ -261,9 +267,10 @@ Key metrics: rate of onboarded users to invoice created rate; paid invoices rate
 - Experiment with niche long-tail payment options (BNPL, cross-border)
 - Growing take rate of invoice payments via better vendor pricing
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 Key metrics: all metrics discussed in the previous phases, plus take rate per completed transaction; payment channel utilization especially niche channels (BNPL, cross-border); number of "in-system buyers" per client.
+{{% /speaker_note %}}
 
 ---
 
@@ -292,9 +299,11 @@ flowchart LR
     end
     Now --> Next --> Later
 ```
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 To achieve each narrative of success, these initiatives are proposed, with a "laundry list" of initiatives generated pre-prioritization, then going through a prioritization process (for the purposes of this exercise, RICE).
+{{% /speaker_note %}}
+
 
 ---
 
@@ -305,13 +314,16 @@ To achieve each narrative of success, these initiatives are proposed, with a "la
 - New payment channels via aggregator: QRIS, VA/bank transfer
 - Populate docs: support docs + API docs (payment section)
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 Rationale & metrics moved:
 - Google login fix → dashboard engagement (login rate)
 - Demo visibility → rate of onboarded users to invoice created rate
 - New payment channels → paid invoices rate; invoices created-to-paid within system rate
 - Docs → rate of onboarded users to invoice created rate; support ticket volume tagged to onboarding and invoice creation
+
+{{% /speaker_note %}}
+
 
 ---
 
@@ -321,12 +333,14 @@ Rationale & metrics moved:
 - Support partial end-user payments, opt-in per invoice (unclear if already supported)
 - Decouple payment from Coretax passphrase certificate gate, where compliance allows
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 Rationale & metrics moved:
 - New payment channels → paid invoices rate; invoices created-to-paid within system rate; payment channel mix
 - Partial payments → paid invoices rate; invoices created-to-paid within system rate
 - Decouple Coretax gate → dashboard engagement (login rate, MAU/WAU/DAU) per user; rate of onboarded users to invoice created rate
+
+{{% /speaker_note %}}
 
 ---
 
@@ -337,11 +351,13 @@ Rationale & metrics moved:
 - Negotiate better take rate from QRIS vendors
 - Explore niche long-tail payment options: BNPL, cross-border, crypto
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 Rationale & metrics moved:
 - Vendor integrations / H2H / QRIS negotiation → take rate per completed transaction
 - Niche long-tail options (BNPL - Shopee PayLater, GoPayLater, Kredivo/Home Credit/etc.; cross-border payments; crypto) → invoices created-to-paid within system rate; take rate per completed transaction; payment channel utilization especially niche channels; number of in-system buyers per client
+{{% /speaker_note %}}
+
 
 ---
 
@@ -353,11 +369,13 @@ Rationale & metrics moved:
 - **Confidence**: how accurate the R/I/E estimates are
 - **Effort**: 0.5 = no dev needed → 2 = internal + external integration dev
 
-{{% speaker_note %}}{{% /speaker_note %}}
+{{% speaker_note %}}
 Note:
 Providing prioritization for a laundry list can use multiple tools. For sake of simplicity, this document uses the RICE method. This provides further validation and rigor into prioritization and timelining of each feature request in the laundry list — in effect, the Now/Next/Later horizon of every item can still change based on this RICE scoring.
 
 Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/Achilles user base still uses the onlinepajak domain AND uses Google login, and has a massive impact score because without the fix that 35% wouldn't be able to access the dashboard at all.
+
+{{% /speaker_note %}}
 
 ---
 
@@ -433,6 +451,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ![](https://picsum.photos/800/600)
 
+{{% speaker_note %}}
 Note:
 It is understood that this document presents initiatives that have not yet been aligned with any internal context in OnlinePajak/Achilles; there is therefore an expectation of major risks and open questions borne out of assumptions, listed here.
 
@@ -443,6 +462,7 @@ Compliance risk: Some initiatives listed here may cut into the tax compliance pa
 Technical and resource risk: Need to confirm that resources for doing the initiatives are available and if some stacks (example: PCI-DSS for card payment channels) are already there technically; if not, timelining will need to be tweaked.
 
 Branding/positioning risk: The initiatives listed here do not have improvements or iterations within the tax compliance perspective (current OnlinePajak USP). While this fits the strategy for OnlinePajak/Achilles to be an "all-in-one" business platform, would there be a risk within current branding/positioning in the market that the initial USP is diluted?
+{{% /speaker_note %}}
 
 ---
 
@@ -467,6 +487,8 @@ Note:
 - Xendit API Reference: developers.xendit.co
 - Mekari Pay / Jurnal Payment API: developer.jurnal.id
 
+{{% speaker_note %}}
+
 Note:
 Full reference links:
 - OnlinePajak/Achilles Dashboard: https://app.onlinepajak.com
@@ -476,6 +498,9 @@ Full reference links:
 - Mekari Pay / Jurnal Payment API: https://developer.jurnal.id/
 - RICE Prioritization Framework (Intercom): https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/
 - RICE Scoring Model (ProductPlan): https://www.productplan.com/glossary/rice-scoring-model/
+{{% /speaker_note %}}
+
+---
 
 <!-- Add this at the bottom of index.md -->
 <style>
