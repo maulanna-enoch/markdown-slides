@@ -161,6 +161,9 @@ While it is expected that some limitation appears before verification, my point 
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
+</div>
+
+</div>
 
 
 
@@ -191,7 +194,7 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 <div style="flex: 1; padding-left: 1rem;">
 </div>
 
-<div style="flex: 1; padding-left: 1rem;">
+</div>
 
 
 {{% speaker_note %}}
@@ -229,31 +232,14 @@ flowchart LR
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
+</div>
+
+</div>
 
 
 {{% speaker_note %}}
 Note:
 I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
-{{% /speaker_note %}}
-
-
----
-
-## OAuth Domain Redirect Bug
-
-```mermaid
-flowchart LR
-    A[User visits app.online-pajak.com] --> B[Clicks Google Sign-in]
-    B --> C[OAuth handshake completes]
-    C --> D[Redirects back to login page]
-    D -.manual workaround.-> E[Navigate directly to app.achilles.id/home]
-    E --> F[Authenticated dashboard]
-    style D fill:#f88,stroke:#900
-    style F fill:#8f8,stroke:#090
-```
-{{% speaker_note %}}
-Note:
-Google sign-in on app.online-pajak.com completes the OAuth handshake but then redirects back to the login page instead of into the app; users need to navigate directly to app.achilles.id/home to land on the authenticated dashboard. This will be significant for users who only remember the dashboard as "OnlinePajak" and not "Achilles."
 {{% /speaker_note %}}
 
 ---
