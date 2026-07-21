@@ -50,7 +50,10 @@ header:
 ## Executive Summary
 
 - Walked through Achilles platform, from onboarding to invoice creation
-- Found friction points: payment channel coverage, dashboard UI reliability, API docs
+- Found friction points on:
+ - payment channel coverage,
+ - dashboard UI reliability,
+ - API docs
 - Proposed "what success looks like" (inc. narrative and metrics)
 - Proposed a prioritized mini-roadmap with RICE scoring
 - Closes with open questions and risks
@@ -77,14 +80,12 @@ Finally, it addresses the open questions and risks from following this document,
   - API documentation issues
 
 {{% speaker_note %}}
-
 Note:
 To understand the existing Achilles platform and capabilities, I walked through the Achilles onboarding flow (registration up until becoming a registered user) and payment creation flow. (Caveat: I didn't manage to do the Coretax passphrase verification and mapping.)
 
 The exploration surfaced rooms for improvement to the platform. Prioritizing clarity over completeness, this document highlights three categories: Payment Channel coverage, Dashboard UI reliability, and API documentation issues.
 
 Each of these will add friction to users looking to have a completed transaction and paid invoices.
-
 {{% /speaker_note %}}
 
 ---
@@ -98,6 +99,7 @@ Each of these will add friction to users looking to have a completed transaction
 
 ![](https://picsum.photos/800/600)
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 It is understood that Achilles/OnlinePajak has a more tax-compliance-focused message vs. other payment players, but not having coverage in payment channels can discourage invoice completion within the platform, and will eventually defeat the "tax compliance with convenience" message.
 
@@ -112,6 +114,7 @@ While it is expected that some limitation appears before verification, my point 
 - Google OAuth domain redirect bug (online-pajak.com ↔ app.achilles.id)
 - Demo environment: buried in navigation + broken onboarding step
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
 
@@ -247,6 +250,7 @@ Key metrics: onboard completion rate; dashboard engagement (login rate, monthly/
 - Payment flow (dashboard + APIs), channels, and options match payment-industry norms
 - Growing number of sales invoice creations and payment completions
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 Key metrics: rate of onboarded users to invoice created rate; paid invoices rate; invoices created-to-paid within system rate; payment channel mix (VA vs. card vs. QRIS).
 
@@ -257,6 +261,7 @@ Key metrics: rate of onboarded users to invoice created rate; paid invoices rate
 - Experiment with niche long-tail payment options (BNPL, cross-border)
 - Growing take rate of invoice payments via better vendor pricing
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 Key metrics: all metrics discussed in the previous phases, plus take rate per completed transaction; payment channel utilization especially niche channels (BNPL, cross-border); number of "in-system buyers" per client.
 
@@ -287,7 +292,7 @@ flowchart LR
     end
     Now --> Next --> Later
 ```
-
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 To achieve each narrative of success, these initiatives are proposed, with a "laundry list" of initiatives generated pre-prioritization, then going through a prioritization process (for the purposes of this exercise, RICE).
 
@@ -300,6 +305,7 @@ To achieve each narrative of success, these initiatives are proposed, with a "la
 - New payment channels via aggregator: QRIS, VA/bank transfer
 - Populate docs: support docs + API docs (payment section)
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 Rationale & metrics moved:
 - Google login fix → dashboard engagement (login rate)
@@ -315,6 +321,7 @@ Rationale & metrics moved:
 - Support partial end-user payments, opt-in per invoice (unclear if already supported)
 - Decouple payment from Coretax passphrase certificate gate, where compliance allows
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 Rationale & metrics moved:
 - New payment channels → paid invoices rate; invoices created-to-paid within system rate; payment channel mix
@@ -330,6 +337,7 @@ Rationale & metrics moved:
 - Negotiate better take rate from QRIS vendors
 - Explore niche long-tail payment options: BNPL, cross-border, crypto
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 Rationale & metrics moved:
 - Vendor integrations / H2H / QRIS negotiation → take rate per completed transaction
@@ -345,6 +353,7 @@ Rationale & metrics moved:
 - **Confidence**: how accurate the R/I/E estimates are
 - **Effort**: 0.5 = no dev needed → 2 = internal + external integration dev
 
+{{% speaker_note %}}{{% /speaker_note %}}
 Note:
 Providing prioritization for a laundry list can use multiple tools. For sake of simplicity, this document uses the RICE method. This provides further validation and rigor into prioritization and timelining of each feature request in the laundry list — in effect, the Now/Next/Later horizon of every item can still change based on this RICE scoring.
 
@@ -467,3 +476,12 @@ Full reference links:
 - Mekari Pay / Jurnal Payment API: https://developer.jurnal.id/
 - RICE Prioritization Framework (Intercom): https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/
 - RICE Scoring Model (ProductPlan): https://www.productplan.com/glossary/rice-scoring-model/
+
+<!-- Add this at the bottom of index.md -->
+<style>
+  .reveal .slides section p, 
+  .reveal .slides section li {
+    font-size: 0.7em;  /* Adjust this number (0.6 - 0.9) to find your perfect size */
+  }
+</style>
+
