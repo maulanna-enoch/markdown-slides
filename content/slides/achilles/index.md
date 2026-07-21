@@ -72,7 +72,7 @@ Finally, it addresses the open questions and risks from following this document,
 
 - I walked through Achilles onboarding (registration → registered user) and invoice creation flow
   - _caveat: I did not complete Coretax passphrase verification, so I couldn't create invoice in production_
-- Exploration surfaced friction categorized by:
+- Exploration surfaced **friction for users** to getting to have paid invoices:
   - Payment Channel coverage
   - Dashboard UI reliability
   - API documentation issues
@@ -81,9 +81,7 @@ Finally, it addresses the open questions and risks from following this document,
 Note:
 To understand the existing Achilles platform and capabilities, I walked through the Achilles onboarding flow (registration up until becoming a registered user) and payment creation flow. (Caveat: I didn't manage to do the Coretax passphrase verification and mapping.)
 
-The exploration surfaced rooms for improvement to the platform. Prioritizing clarity over completeness, this document highlights three categories: Payment Channel coverage, Dashboard UI reliability, and API documentation issues.
-
-Each of these will add friction to users looking to have a completed transaction and paid invoices.
+This document highlights three categories: Payment Channel coverage, Dashboard UI reliability, and API documentation issues. These issues add friction to users looking to have a completed transaction and paid invoices.
 {{% /speaker_note %}}
 
 ---
@@ -94,12 +92,41 @@ Each of these will add friction to users looking to have a completed transaction
 
 <div style="flex: 1; padding-right: 1rem;">
 
-- Channels today: **cards and VA only**
+- Channels available: **cards and VA only**
   — below table stakes compared to a payment aggregator platform
   - discourage invoice completion within the platform
-- Missing features: fee-free bank transfer, QRIS, bulk/partial supplier payment support
+- Missing features:
+  - payment via fee-free bank transfer,
+  - payment via QRIS,
+  - bulk/partial supplier payment support
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+
+![](existing-payment-options.png)
+
+</div>
+
+</div>
+
+{{% speaker_note %}}
+Note:
+It is understood that Achilles/OnlinePajak has a more tax-compliance-focused message vs. other payment players, but not having coverage in payment channels can discourage invoice completion within the platform, and will eventually defeat the "tax compliance with convenience" message.
+
+{{% /speaker_note %}}
+
+
+---
+
+## Payment Channel Coverage (2)
+
+<div class="r-hstack">
+
+<div style="flex: 1; padding-right: 1rem;">
+
 - Creating a payment is gated behind Coretax passphrase verification
   - (expected from a tax compliance POV, but adds friction for users trying the product out)
+  - 
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
