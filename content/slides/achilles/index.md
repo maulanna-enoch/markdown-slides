@@ -64,6 +64,7 @@ It also proposes a mini-roadmap consisting of a prioritized "laundry-list" of in
 
 Finally, it addresses the open questions and risks from following this document, as it's purely done from an external's perspective.
 {{% /speaker_note %}}
+
 ---
 
 ## Problem & Opportunity Framing
