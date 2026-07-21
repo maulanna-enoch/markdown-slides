@@ -90,12 +90,25 @@ Each of these will add friction to users looking to have a completed transaction
 
 ## Payment Channel Coverage
 
-- Channels today: **cards and VA only** — below table stakes compared to a payment aggregator platform
-- Missing: fee-free bank transfer, QRIS, bulk/partial supplier payment support
+<div class="r-hstack">
+
+<div style="flex: 1; padding-right: 1rem;">
+
+- Channels today: **cards and VA only**
+  — below table stakes compared to a payment aggregator platform
+  - discourage invoice completion within the platform
+- Missing features: fee-free bank transfer, QRIS, bulk/partial supplier payment support
 - Creating a payment is gated behind Coretax passphrase verification
   - (expected from a tax compliance POV, but adds friction for users trying the product out)
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
 
 ![](existing-payment-options.png)
+
+</div>
+
+</div>
 
 {{% speaker_note %}}
 Note:
