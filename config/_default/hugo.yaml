@@ -4,7 +4,7 @@
 # Website name (set in params.yaml under hugoblox.identity.name)
 title: ''
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://maulanna-enoch.github.io/markdown-slides/'
 
 ############################
 ## LANGUAGE
