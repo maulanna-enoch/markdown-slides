@@ -147,10 +147,51 @@ While it is expected that some limitation appears before verification, my point 
 
 ## Dashboard UI Reliability
 
-Exploration surfaced breakage and confusing UI, breaking flows for users
-- Empty support page (support.achilles.id)
-- Google OAuth domain redirect bug (for app.online-pajak.com)
-- Demo environment: buried in navigation + broken onboarding step
+<div class="r-hstack">
+
+<div style="flex: 1; padding-right: 1rem;">
+
+- Demo environment buried in navigation + broken onboarding flow
+- Breaking "Login with Google" if using app.online-pajak.com domain
+- Empty support pages (support.achilles.id)
+  - practically all articles not have any content
+
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+
+
+
+{{% speaker_note %}}
+Note:
+I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
+{{% /speaker_note %}}
+
+
+---
+
+## Dashboard UI Reliability (1 of 3)
+Demo environment buried in navigation + broken onboarding flow
+
+<div class="r-hstack">
+
+<div style="flex: 1; padding-right: 1rem;">
+
+- Not surfaced in primary navigation — buried three levels deep in Settings
+  - Peer payment-focused products (Xendit, DanaraPay) make Demo Mode highly visible
+- OTP verification (email/phone) breaks (no way to onboard)
+  - Workaround: clicking "back" during onboarding grants demo access _without being logged in_ (hacky? lucky?)
+
+`[(kinda hope you haven't fixed it)Let me show you:](https://app.achilles.id/global-settings/settings/manage-api-keys)`
+
+
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+
 
 {{% speaker_note %}}
 Note:
