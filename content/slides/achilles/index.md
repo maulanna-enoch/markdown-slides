@@ -176,7 +176,7 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 ---
 
 ## Dashboard UI Reliability 
-(1 of 3) Demo environment buried in navigation + broken onboarding flow
+**(1 of 3) Demo environment buried in navigation + broken onboarding flow**
 
 <div class="r-hstack">
 
@@ -186,7 +186,7 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
   - Peer payment-focused products (Xendit, DanaraPay) make Demo Mode highly visible
 - OTP verification (email/phone) breaks (no way to onboard)
   - Workaround: clicking "back" during onboarding grants demo access _without being logged in_ (hacky? lucky?)
-  - [(kinda hope you haven't fixed it)Let me show you:](https://app.achilles.id/global-settings/settings/manage-api-keys)
+  - [Let me show you](https://app.achilles.id/global-settings/settings/manage-api-keys)
 
 
 </div>
