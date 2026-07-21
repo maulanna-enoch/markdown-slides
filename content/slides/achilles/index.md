@@ -213,6 +213,7 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 <div class="r-hstack">
 
 <div style="flex: 1; padding-right: 1rem;">
+  
 (2 of 3) Breaking "Login with Google" if using app.online-pajak.com domain
 - user visits the dashboard via OnlinePajak domain (app.online-pajak.com) and signs in via Google,
 - the completed sign-in doesn't redirect to Achilles dashboard,
@@ -223,11 +224,9 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 <div style="flex: 1; padding-left: 1rem;">
 
 (3 of 3) Empty support pages (support.achilles.id)
+
 - practically all articles not have any content
 
-</div>
-
-<div style="flex: 1; padding-left: 1rem;">
 </div>
 
 </div>
