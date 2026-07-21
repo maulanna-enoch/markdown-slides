@@ -94,9 +94,8 @@ Each of these will add friction to users looking to have a completed transaction
 - Missing: fee-free bank transfer, QRIS, bulk/partial supplier payment support
 - Creating a payment is gated behind Coretax passphrase verification
   - (expected from a tax compliance POV, but adds friction for users trying the product out)
-- Demo environment exists but is buried in settings --> API key settings
 
-![](https://picsum.photos/800/600)
+![](existing-payment-options.png)
 
 {{% speaker_note %}}
 Note:
