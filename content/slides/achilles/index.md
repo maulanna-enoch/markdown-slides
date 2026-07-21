@@ -1,16 +1,45 @@
 ---
 title: "Achilles (OnlinePajak): Strategy for Growth in Onboarding and Payment/Checkout Flows"
-summary: "Strategy proposal for improving onboarding and payment/checkout flows on the Achilles platform"
-authors: ["Maulanna Maryunani"]
 date: 2026-07-21
-outputs: ["present"]
+description: "Strategy proposal for improving onboarding and payment/checkout flows on the Achilles platform"
+authors: ["Maulanna Maryunani"]
+featured: true
 type: slides
+slides:
+  theme: black  # Options: black, white, league, beige, sky, night, serif, simple, solarized
+  highlight_style: dracula  # Code syntax highlighting theme
+  diagram: true  # Enable Mermaid diagrams for flowcharts, etc.
+  reveal_options:
+    controls: true      # Show navigation arrows
+    progress: true      # Show progress bar
+    slideNumber: true   # Show slide numbers
+    hash: true          # Update URL when navigating slides
+
+
+  # BRANDING: Add logo, title overlay, and footer to your presentation
+  # All settings are optional - remove any you don't need
+  branding:
+    # LOGO: Display your organization's logo
+    logo:
+      filename: "slides-logo.svg"   # File in assets/media/ folder (SVG recommended for any theme)
+      position: "top-right"         # Options: top-left, top-right, bottom-left, bottom-right
+      width: "50px"                 # Logo width (height scales automatically)
+    
+    # TITLE OVERLAY: Show presentation title on every slide
+    title:
+      show: true                    # Set to false to hide
+      position: "bottom-left"       # Options: top-left, top-right, bottom-left, bottom-right
+    
+    # FOOTER TEXT: Display copyright, conference name, etc.
+    footer:
+      text: "© 2026 HugoBlox"       # Supports Markdown (e.g., links)
+      position: "bottom-center"     # Options: top-left, top-right, bottom-left, bottom-right, bottom-center
 ---
 
 # Achilles (OnlinePajak)
 ## Strategy for Growth in Onboarding and Payment/Checkout Flows
 
-**By Maulanna Maryunani**
+**by: Maulanna Maryunani**
 
 ![](https://picsum.photos/800/600)
 
