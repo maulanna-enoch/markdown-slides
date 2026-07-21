@@ -126,21 +126,19 @@ It is understood that Achilles/OnlinePajak has a more tax-compliance-focused mes
 
 - Creating a payment is gated behind Coretax passphrase verification
   - (expected from a tax compliance POV, but adds friction for users trying the product out)
-  - 
+  - propose to explore a compliant way of completing _at least one_ invoice creation before passphrase verification
+  - another way: make it easier to explore **demo environment** (will discuss later)
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
 
-![](existing-payment-options.png)
+![](coretax-verif.png)
 
 </div>
 
 </div>
 
 {{% speaker_note %}}
-Note:
-It is understood that Achilles/OnlinePajak has a more tax-compliance-focused message vs. other payment players, but not having coverage in payment channels can discourage invoice completion within the platform, and will eventually defeat the "tax compliance with convenience" message.
-
 While it is expected that some limitation appears before verification, my point of view is that it's important for a (prospective) user to be able to experience the whole flow, even if only in the demo environment (currently buried in the settings page and requiring a second registration). This is especially true for the long-tail SME market, which probably has document completeness as a more potent friction point.
 {{% /speaker_note %}}
 
