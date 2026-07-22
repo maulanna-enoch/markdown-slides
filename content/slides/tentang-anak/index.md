@@ -148,8 +148,25 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ---
 
 ## High-Level User Flow
-
-<!-- Step-by-step of the new experience; wireframes optional -->
+ 
+```mermaid
+flowchart TD
+    Start([User opens Homepage]) --> Modules[Homepage displays modules in equal hierarchy]
+    Modules --> GT[Growth Tracker]
+    Modules --> AT[Activity Tracker]
+    Modules --> VR[Vaccination Reminder]
+ 
+    GT --> Reorder{Reorder modules?}
+    AT --> Reorder
+    VR --> Reorder
+ 
+    Reorder -- Yes --> Customize[Long-press / Customize Homepage]
+    Customize --> DragDrop[Drag & drop modules into preferred order]
+    DragDrop --> Save[Order saved per user]
+    Save --> Modules
+ 
+    Reorder -- No --> Detail[Tap a module for full detail / action]
+```
 
 ---
 
