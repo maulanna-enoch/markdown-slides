@@ -419,7 +419,7 @@ References:
   .reveal .slides section p, 
   .reveal .slides section li {
     font-size: 0.7em;  /* Adjust this number (0.6 - 0.9) to find your perfect size */
-    line-height: 1.1;  /* Optional: tightens the space between lines */
+    line-height: 1.2;  /* Optional: tightens the space between lines */
   }
 </style>
 
