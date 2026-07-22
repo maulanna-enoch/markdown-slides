@@ -272,8 +272,9 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
+
+![](laundrylist.png)
   
-<img src="https://github.com/maulanna-enoch/markdown-slides/blob/main/assets/media/laundrylist.png" style="padding: 0; height: 85vh;">
 </div>
 
 </div>
