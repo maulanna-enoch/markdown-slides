@@ -214,7 +214,7 @@ flowchart TD
 
 ### Dev Timelines and Rollout
  
-<div style="font-size: 0.55em;">
+<div style="font-size: 0.3em;">
 
 | Week | PM | PD | BE | FE | QA |
 | :--- | :--- | :--- | :--- | :--- | :--- |
