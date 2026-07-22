@@ -207,7 +207,7 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 ---
 ### API Documentation
 I compared Achilles' API Documentation to Mekari Klikpajak's and to Xendit's, to be able to compare against both a tax compliance biased platform and a payments completeness biased one.
-<div class="r-hstack" style="align-items: flex-start;">
+<div class="r-hstack" style="align-items: flex-start; font-size: 0.8em;">
   
 <div style="flex: 1; padding-right: 1rem;">
   
@@ -232,9 +232,8 @@ _While Achilles compares favorably to KlikPajak as a tax-compliance platform wit
 {{% speaker_note %}}
   - Achilles spans Transaction, Document, Tax Payment & Filing, DataServices, Payroll, and Print & Delivery, with sequence diagrams
   - Klikpajak: e-Faktur/e-Bupot/e-Billing/NPWP-validation surface with no comparable getting-started walkthrough
-
-  - 
 {{% /speaker_note %}}
+
 ---
 
 ## 2. What Success Looks Like
