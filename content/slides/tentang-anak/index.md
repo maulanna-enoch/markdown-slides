@@ -218,15 +218,16 @@ flowchart TD
 
 | Week | PM | PD | BE | FE | QA |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Finalize spec, align stakeholders | Design Growth Tracker module + Vaccination reposition | Confirm existing data/endpoints suffice | Env setup, scaffold Growth Tracker module | Review requirements, draft test plan |
-| 2 | Review designs, refine edge cases (multi-child, Kehamilan) | Finalize Growth Tracker + Vaccination designs; start reorder concepts | Ship Growth Tracker/Vaccination endpoint changes; scope reorder schema | Build Growth Tracker module + Vaccination reposition | Write test cases, smoke-test early builds |
-| 3 | Validate reorder UX, confirm instrumentation plan | Finalize drag-and-drop reorder design | Build reorder persistence API (save/read per-user order) | Build reorder drag-and-drop UI | Functional testing: Growth Tracker + Vaccination |
-| 4 | Coordinate analytics tagging, draft rollout plan | Polish reorder UI, non-drag accessibility alt | Finish reorder API, add analytics events | Wire reorder end-to-end + analytics | Test reorder + edge cases (multi-child, sync, network failure) |
-| 5 | Finalize rollout/experiment plan, run dogfood loop | Fix issues from dogfooding | Bug fixes, performance checks | Bug fixes from QA/dogfooding | Full regression pass, sign-off |
-| 6 | Run staged rollout, monitor guardrails, decide ramp | Monitor UI feedback | Monitor backend health, on-call for fixes | Monitor client errors/crashes, hotfix | Monitor rollout, validate kill-switch |
+| 1 | PRD, kickoff | design Growth Tracker module | design docs for Reorder | design docs for Reorder | review PRD, draft test plan |
+| 2 | review GT design | finalize + UT Growth Tracker designs; start reorder design | finalize Reorder design docs | Build GT module | test cases |
+| 3 | draft dogfood plan | finalize + UT drag-and-drop reorder design | Build reorder persistence API (save/read per-user order) | Build reorder drag-and-drop UI | Test: GT module |
+| 4 | draft rollout plan | Polish reorder UI, non-drag accessibility alt | Finish reorder API, add analytics events | Build + wire reorder end-to-end + analytics | Test: GT module + reorder, dogfooding release |
+| 5 | finalize rollout plan| Monitor UI issues from dogfooding | Bug fixes, performance checks | Bug fixes from QA/dogfooding | Full regression pass, sign-off |
+| 6 | Run staged rollout, monitor guardrails | Monitor UI feedback | Monitor backend health | Monitor client errors/crashes | Monitor rollout |
  
 </div>
 
+- **Initial rollout**: A/B test, add 10%/20%/50%/100% weekly
 - **Success gate before full rollout:** no regression on guardrail metrics (drop-off, DAU, WAU) + directionally positive signal on module engagement/reorder adoption
 - **Expectation-setting:** MAU is a 30-day metric — the 6-week window delivers the shipped MVP and early leading indicators, not final proof; full MAU validation needs more time post-launch
 
