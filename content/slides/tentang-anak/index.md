@@ -9,8 +9,14 @@ categories: []
 date: 2026-07-22
 type: slides
 slides:
+  diagram: true
   theme: white
   highlight_style: github
+  reveal_options:
+    controls: true      # Show navigation arrows
+    progress: true      # Show progress bar
+    slideNumber: true   # Show slide numbers
+    hash: true          # Update URL when navigating slides
   
 ---
 
