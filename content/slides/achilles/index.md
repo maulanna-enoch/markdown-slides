@@ -372,10 +372,14 @@ Two experiments proposed to validate roadmap hypotheses
 
 ### Risks & Open Questions
 
+<div style="font-size: 0.8em;">
+  
 - **Company strategy risk**: does a payments-heavy roadmap fit OnlinePajak's broader "break through" payments strategy?
 - **Compliance risk**: could initiatives (e.g. pre-verification invoicing) harm standing with DJP/regulators? (critical)
 - **Technical/resource risk**: some resources and stacks (e.g. PCI-DSS for cards) are costly, is it already available?
 - **Branding/positioning risk**: Will a focus on payments completeness dilute the core tax-compliance USP?
+
+</div>
 
 {{% speaker_note %}}
 Note:
