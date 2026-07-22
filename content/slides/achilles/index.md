@@ -238,52 +238,11 @@ _While Achilles compares favorably to KlikPajak as a tax-compliance platform wit
 
 ## 2. What Success Looks Like
 
-To decide what to improve in the Achilles platform, this document defines what success looks like, providing narrative and key metrics, divided by rough time horizon phases: Now (0-3 months), Next (3-6), or Later (6-12)
+To prioritize initiatives I defined what success looks like, providing narrative and key metrics, divided by rough time horizon phases (Now (0-3 months), Next (3-6), or Later (6-12))
 
-![](success.png)
+<img src="success.png" style="height: 50vh;">
 
 Division of Now/Next/Later narratives are based on ballpark estimates of which milestones can come earlier (by rough effort estimation).
-
----
-
-### What Success Looks Like: Now (0–3 months)
-
-- Improved onboarding flows and documentation
-- Conversion of self-onboarded merchants to first invoice creation
-- Start adding payment channels for sales invoices
-- Experiments to improve paid invoices rate
-
-![](https://picsum.photos/800/600)
-
-{{% speaker_note %}}
-Note:
-Key metrics: onboard completion rate; dashboard engagement (login rate, monthly/weekly/daily active) per user; rate of onboarded users to invoice created rate; paid invoices rate; invoices created-to-paid within system rate.
-{{% /speaker_note %}}
-
----
-
-### What Success Looks Like: Next (3–6 months)
-
-- Payment flow (dashboard + APIs), channels, and options match payment-industry norms
-- Growing number of sales invoice creations and payment completions
-
-{{% speaker_note %}}
-Note:
-Key metrics: rate of onboarded users to invoice created rate; paid invoices rate; invoices created-to-paid within system rate; payment channel mix (VA vs. card vs. QRIS).
-{{% /speaker_note %}}
-
-
----
-
-### What Success Looks Like: Later (6–12 months)
-
-- Experiment with niche long-tail payment options (BNPL, cross-border)
-- Growing take rate of invoice payments via better vendor pricing
-
-{{% speaker_note %}}
-Note:
-Key metrics: all metrics discussed in the previous phases, plus take rate per completed transaction; payment channel utilization especially niche channels (BNPL, cross-border); number of "in-system buyers" per client.
-{{% /speaker_note %}}
 
 ---
 
