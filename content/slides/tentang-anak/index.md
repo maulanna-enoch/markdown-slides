@@ -29,6 +29,27 @@ by Maulanna Maryunani
 
 ---
 
+## Background & Context
+ 
+Tentang Anak is a parenting platform providing trusted content, child development tools, health trackers, and commerce services for parents. In **August 2025**, the Product team launched a major Homepage redesign to create a cleaner, less overwhelming experience, driven by two observations: users perceived the old homepage as cluttered and hard to navigate, and homepage bounce rate was relatively high. In the redesign, the **Baby Tracker** (one of the most-used features) became the primary homepage focus, and most feature shortcuts were moved behind a dedicated **Menu page**.
+ 
+Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable. Over the following months, however, **MAU declined** and **new installs continued to decrease**. Leadership expected engagement and growth to improve — those expectations were not met. Leadership now wants Product to determine **what should be improved next**.
+
+---
+
+## What the Data Shows
+ 
+| Quantitative (last 6 months) | Qualitative research |
+| :--- | :--- |
+| • Homepage drop-off: **26% → 18%** after redesign | • Homepage feels "cleaner" but "less useful" |
+| • DAU stable at **~15,000**/day; WAU stable at **~62,000**/week | • Some parents struggle to find important features |
+| • MAU declined **145,000 → 123,000** | • Growth Tracking (Fitur Tumbuh), a core value proposition, is now harder to access |
+| • Monthly installs declined **19,000 → 14,500** | • Many users are unaware of features hidden behind the Menu page |
+ 
+*Note: the team has **not** concluded that homepage discoverability is the root cause of the declining metrics. Before/after homepage screenshots are provided separately.*
+
+---
+
 ## Problem Statements
 
 **1. Prioritizing Baby Tracker squeezes out non-daily/weekly features**
@@ -40,24 +61,7 @@ by Maulanna Maryunani
 - Kehamilan tab, "+" add child, Gizi baik pill, "Lihat Semua Tracker," Pencapaian arrow — all carry bold-fill / arrow / icon-badge treatment
 - No single clear primary action — visual noise persists even though feature count went down
 - Undermines the "must remain simple" goal independent of any information-architecture fix
-
----
-
-## Background & Context
-
-<!-- Aug 2025 redesign, what changed, what leadership expects -->
-
----
-
-## What the Data Shows
-
-<!-- Quant + qual summary — set up the tension the PRD resolves -->
-
----
-
-## Problem Statement & Assumptions
-
-<!-- The core problem being solved + explicit assumptions -->
+ 
 
 ---
 
