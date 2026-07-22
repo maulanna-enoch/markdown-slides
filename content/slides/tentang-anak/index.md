@@ -158,7 +158,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 <div style="font-size: 0.8em;">
  
 ```mermaid
-flowchart LR
+flowchart TD
     Start([User opens Homepage]) --> Modules[Homepage displays modules in equal hierarchy]
     Modules --> GT[Growth Tracker]
     Modules --> AT[Activity Tracker]
