@@ -94,20 +94,18 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ---
 
 ## Opportunity Assessment
-<div style="font-size: 0.6em;">
+<div style="font-size: 0.9em;">
 (Why Solve This First)
 
 <!-- Why this bet, over other plausible bets, given the constraints -->
 
 **Why this bet first:**
-
 - Only hypothesis consistent with all four data points at once: DAU/WAU stable (daily habit intact) + MAU declining (monthly-cadence usage eroding) + installs declining (plausible referral/word-of-mouth spillover from that same eroding cohort)
 - Direct evidence: quali research names Fitur Tumbuh (Growth Tracking) explicitly as a "core value proposition" that's now "harder to access"
 - Protects what's already working — doesn't touch Baby Tracker, so the DAU/WAU and drop-off gains already banked aren't put at risk
 - Fast to ship and validate — should fit resource constraints and have time to A/B test and get signals
 
 **Why not other bets first:**
-
 - Full Menu redesign — bigger effort accross domains
 - Cleaning up homepage (get rid of some CTAs) — higher risk of alienating current baby tracking power users
 
