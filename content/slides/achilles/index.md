@@ -208,6 +208,7 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 ### API Documentation
 I compared Achilles' API Documentation to Mekari Klikpajak's and to Xendit's, to be able to compare against both a tax compliance biased platform and a payments completeness biased one.
 <div class="r-hstack" style="align-items: flex-start;">
+  
 <div style="flex: 1; padding-right: 1rem;">
   
 **vs Mekari KlikPajak**
@@ -216,10 +217,12 @@ I compared Achilles' API Documentation to Mekari Klikpajak's and to Xendit's, to
 </div>
 
 <div style="flex: 1; padding-left: 1rem;">
+  
 **vs Xendit**
 - Xendit lacks tax compliance but has broader payment channels and use cases
   - (VA, QRIS, cards, e-wallet), bulk + UI/no-UI checkouts, refunds/returns covered
 - Achilles docs: one payment endpoint, leads to a waitlist (unclear if live)
+
 </div>
 
 </div>
