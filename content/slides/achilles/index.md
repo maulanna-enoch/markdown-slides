@@ -215,7 +215,6 @@ I compared Achilles' API Documentation to Mekari Klikpajak's and to Xendit's, to
 <div style="flex: 1; padding-right: 1rem;">
   
 **vs Mekari KlikPajak**
-![](klikpajak-logo.png)
 - Achilles has a better Getting Started Guide
 - Achilles covers more use cases than KlikPajak
   - Achilles spans Transaction, Document, Tax Payment & Filing, DataServices, Payroll, and Print & Delivery, with sequence diagrams
@@ -226,7 +225,6 @@ I compared Achilles' API Documentation to Mekari Klikpajak's and to Xendit's, to
 <div style="flex: 1; padding-left: 1rem;">
 
 **vs Xendit**
-![](xendit-logo.png)
 - Xendit lacks tax-compliance processes
 - Xendit has broader payment channels and use cases
   - (VA, QRIS, cards, e-wallet), bulk + UI/no-UI checkouts, refunds/returns covered
