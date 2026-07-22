@@ -22,16 +22,24 @@ Verify these separators match your HugoBlox/reveal.js config —
 some versions default to different symbols.
 ============================================================= -->
 
-# Homepage Revamp
-### Driving Engagement Without Sacrificing Simplicity
+# Tentang Anak Case Study
+### Tentang Anak App Homepage Revamp
 
-<!-- Cover slide: title, one-line framing, name/date -->
+by Maulanna Maryunani
 
 ---
 
-## Agenda
+## Problem Statements
 
-<!-- Optional roadmap slide listing the sections below -->
+**1. Prioritizing Baby Tracker squeezes out non-daily/weekly features**
+- **Baby Tracker** is a daily-cadence habitual activity (tracking naps, feeds, diapers)
+- Prioritizing it leaves little homepage real estate for monthly-cadence features (Growth Tracking, vaccination reminders)
+  -   This lines up with qualitative feedback: "app looks cleaner but feels less useful"
+ 
+**2. The homepage has too many elements styled as primary CTAs**
+- Kehamilan tab, "+" add child, Gizi baik pill, "Lihat Semua Tracker," Pencapaian arrow — all carry bold-fill / arrow / icon-badge treatment
+- No single clear primary action — visual noise persists even though feature count went down
+- Undermines the "must remain simple" goal independent of any information-architecture fix
 
 ---
 
