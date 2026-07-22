@@ -147,34 +147,6 @@ While it is expected that some limitation appears before verification, my point 
 
 ---
 
-## Dashboard UI Reliability
-
-<div class="r-hstack">
-
-<div style="flex: 1; padding-right: 1rem;">
-
-- Demo environment buried in navigation + broken onboarding flow
-- Breaking "Login with Google" if using app.online-pajak.com domain
-- Empty support pages (support.achilles.id)
-  - practically all articles not have any content
-
-</div>
-
-<div style="flex: 1; padding-left: 1rem;">
-</div>
-
-</div>
-
-
-
-{{% speaker_note %}}
-Note:
-I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
-{{% /speaker_note %}}
-
-
----
-
 ## Dashboard UI Reliability 
 **(1 of 3) Demo environment buried in navigation + broken onboarding flow**
 
@@ -210,11 +182,11 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 
 ## Dashboard UI Reliability 
 
-<div class="r-hstack">
+<div class="r-hstack" style="align-items: flex-start;">
 
 <div style="flex: 1; padding-right: 1rem;">
   
-(2 of 3) Breaking "Login with Google" if using app.online-pajak.com domain
+**(2 of 3) Breaking "Login with Google" if using app.online-pajak.com domain**
 - user visits the dashboard via OnlinePajak domain (app.online-pajak.com) and signs in via Google,
 - the completed sign-in doesn't redirect to Achilles dashboard,
 - it loops back to OnlinePajak domain's login page.
@@ -223,7 +195,7 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 
 <div style="flex: 1; padding-left: 1rem;">
 
-(3 of 3) Empty support pages (support.achilles.id)
+**(3 of 3) Empty support pages (support.achilles.id)**
 
 - practically all articles not have any content
 
