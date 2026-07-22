@@ -282,7 +282,7 @@ Laundry list in JPEG is in the next slides, and may move over to google slides i
 
 ---
 
-![](laundrylist2.jpeg)
+![](laundrylist3.png)
 
 {{% speaker_note %}}
 
@@ -311,7 +311,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-![](ricescores.png)
+![](rice2.png)
 
 ---
 
