@@ -396,16 +396,14 @@ Branding/positioning risk: The initiatives listed here do not have improvements 
 
 ---
 
-## Appendix + References
+## End of slides!
 
-References:
-- [OnlinePajak/Achilles Dashboard](https://app.onlinepajak.com)
-- [Achilles Open API Docs](https://developer.achilles.id/docs/api-documentation/187d54910ee5b-single-creation)
-- [Klikpajak Public API v1 (Postman)](https://documenter.getpostman.com/view/17365057/U16hrR5d)
-- [Xendit API Reference](https://developers.xendit.co/api-reference/)
-- [Mekari Pay / Jurnal Payment API](https://developer.jurnal.id/)
-- [RICE Prioritization Framework (Intercom)](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/)
-- [RICE Scoring Model (ProductPlan)](https://www.productplan.com/glossary/rice-scoring-model/)
+Questions are very welcome.
+
+<div style="font-size: 0.8em;">
+
+It has been a pleasure and very fun to do this case study. Best wishes for Achilles in getting the right person for this role!
+</div>
 
 {{% speaker_note %}}
 
