@@ -317,6 +317,8 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ### RICE Scores: Now-tier Items
 
+<div style="font-size: 0.6em;">
+
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
 | Fix Google login failure | 35% | 3 | 60% | 1 | 0.63 | Now |
@@ -325,9 +327,13 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 | Populate API docs (payment) | 50% | 1 | 70% | 0.5 | 0.70 | Now |
 | Decouple Coretax gate | 90% | 2 | 50% | 1.5 | 0.60 | Now |
 
+</div>
+
 ---
 
 ### RICE Scores: Next-tier Items
+
+<div style="font-size: 0.6em;">
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -337,9 +343,13 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 | Bank transfer via unique code | 100% | 0.5 | 70% | 1.5 | 0.23 | Next |
 | Negotiate better QRIS take rate | 30% | 2 | 100% | 2 | 0.30 | Next |
 
+</div>
+
 ---
 
 ### RICE Scores: Later-tier Items
+
+<div style="font-size: 0.6em;">
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -349,6 +359,8 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 | BNPL (Shopee PayLater, GoPayLater, etc.) | 50% | 1 | 50% | 2 | 0.13 | Later |
 | Cross-border payments | 5% | 1 | 50% | 2 | 0.01 | Later |
 | Crypto payments | 3% | 1 | 50% | 2 | 0.01 | Later |
+
+</div>
 
 ---
 
