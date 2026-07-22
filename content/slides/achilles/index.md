@@ -273,7 +273,7 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 <div style="flex: 1; padding-left: 1rem;">
 
-![](laundrylist.png)
+![](laundrylist.png){style="margin:0; padding:0;"}
   
 </div>
 
@@ -288,61 +288,7 @@ To achieve each narrative of success, these initiatives are proposed, with a "la
 
 ---
 
-## Laundry List: Now (0–3 months)
-
-- Fix Google login failure on OnlinePajak domain
-- Improve sandbox/demo visibility; remove re-onboarding after prod onboarding
-- New payment channels via aggregator: QRIS, VA/bank transfer
-- Populate docs: support docs + API docs (payment section)
-
-{{% speaker_note %}}
-Note:
-Rationale & metrics moved:
-- Google login fix → dashboard engagement (login rate)
-- Demo visibility → rate of onboarded users to invoice created rate
-- New payment channels → paid invoices rate; invoices created-to-paid within system rate
-- Docs → rate of onboarded users to invoice created rate; support ticket volume tagged to onboarding and invoice creation
-
-{{% /speaker_note %}}
-
-
----
-
-## Laundry List: Next (3–6 months)
-
-- New payment channels: e-wallet, cards, bank transfer via unique code (reduce VA dependency)
-- Support partial end-user payments, opt-in per invoice (unclear if already supported)
-- Decouple payment from Coretax passphrase certificate gate, where compliance allows
-
-{{% speaker_note %}}
-Note:
-Rationale & metrics moved:
-- New payment channels → paid invoices rate; invoices created-to-paid within system rate; payment channel mix
-- Partial payments → paid invoices rate; invoices created-to-paid within system rate
-- Decouple Coretax gate → dashboard engagement (login rate, MAU/WAU/DAU) per user; rate of onboarded users to invoice created rate
-
-{{% /speaker_note %}}
-
----
-
-## Laundry List: Later (6–12 months)
-
-- Better vendor integrations/relationships for improved take rate
-- Migrate from payment aggregator integrations to H2H for VAs
-- Negotiate better take rate from QRIS vendors
-- Explore niche long-tail payment options: BNPL, cross-border, crypto
-
-{{% speaker_note %}}
-Note:
-Rationale & metrics moved:
-- Vendor integrations / H2H / QRIS negotiation → take rate per completed transaction
-- Niche long-tail options (BNPL - Shopee PayLater, GoPayLater, Kredivo/Home Credit/etc.; cross-border payments; crypto) → invoices created-to-paid within system rate; take rate per completed transaction; payment channel utilization especially niche channels; number of in-system buyers per client
-{{% /speaker_note %}}
-
-
----
-
-## Prioritization: RICE
+### Prioritization using RICE
 
 - RICE = Reach × Impact × Confidence ÷ Effort
 - **Reach**: % of business impacted (e.g., Google Login fix reaches ~35% of users still on old domain using Google login)
@@ -360,7 +306,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-## RICE Scores: Now-tier Items
+### RICE Scores: Now-tier Items
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -372,7 +318,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-## RICE Scores: Next-tier Items
+### RICE Scores: Next-tier Items
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -384,7 +330,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-## RICE Scores: Later-tier Items
+### RICE Scores: Later-tier Items
 
 | Initiative | Reach | Impact | Conf. | Effort | RICE | Verdict |
 |---|---|---|---|---|---|---|
@@ -399,7 +345,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ## Sample Experiments
 
-- Two experiments proposed to validate roadmap hypotheses
+Two experiments proposed to validate roadmap hypotheses
 - Experiment 1: Removing the Coretax Passphrase Verification gate
 - Experiment 2: Enable Bank Transfer via Unique Code
 
