@@ -261,24 +261,17 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 ### Initiatives Laundry List
 
-<div class="r-hstack">
+- Laundry list of initiatives that fit with the narrative definition of success for each phase
+  - Initiatives are presented with relevant metrics
+- Afterwards, we will prioritize by running the list through a prioritization framework
+  - RICE, for this exercise
 
-<div style="flex: 1; padding-right: 1rem;">
-  
-- Laundry list of initiatives generated pre-prioritization
-  - Presented with related metrics to be moved
-- Then run through a prioritization process (RICE, for this exercise)
+{{% speaker_note %}}
 
-</div>
+Note:
+To achieve each narrative of success, these initiatives are proposed, with a "laundry list" of initiatives generated pre-prioritization, then going through a prioritization process (for the purposes of this exercise, RICE).
 
-<div style="flex: 1; padding-left: 1rem; font-size: 0.6em;">
-
-_(Sorry, it turns out some things are breaking and failing to render within the website slides.
-Laundry list in JPEG is in the next slides, and may move over to google slides if/when needed)_
-  
-</div>
-
-</div>
+{{% /speaker_note %}}
 
 ---
 
