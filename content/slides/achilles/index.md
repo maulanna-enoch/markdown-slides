@@ -310,7 +310,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-(rice scores)
+![](ricescores.png)
 
 ---
 
