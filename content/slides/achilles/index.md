@@ -208,36 +208,6 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 Note:
 I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
 {{% /speaker_note %}}
-
----
-
-## Demo Environment Friction
-
-- Not surfaced in primary navigation — buried three levels deep in Settings
-- Peer products (DanaraPay, Xendit) make Demo Mode highly visible
-- Demo onboarding breaks on OTP verification (email/phone)
-- Workaround: clicking "back" during onboarding grants demo access
-- Current path relies on luck, not design
-
-```mermaid
-flowchart TD
-    A[Pengaturan] --> B[Pengaturan Integrasi]
-    B --> C[API Key]
-    C --> D["Coba Akun Demo"]
-    D --> E[Onboarding flow]
-    E --> F[OTP verification]
-    F -->|fails / not received| G[Dead end]
-    E -.click back.-> H[Demo access granted]
-    style F fill:#f88,stroke:#900
-    style H fill:#8f8,stroke:#090
-```
-{{% speaker_note %}}
-Note:
-First, the demo isn't surfaced anywhere in primary navigation but instead in Pengaturan → Pengaturan Integrasi → API Key → "Coba Akun Demo." This dramatically reduces conversion of users wanting to see the value of the service. In similar services to OnlinePajak/Achilles — DanaraPay and Xendit, though both are more focused on payment aggregation without emphasis on tax compliance — it's table stakes to have Demo Mode highly visible.
-
-Secondly, clicking through goes through an onboarding flow which breaks because it needs OTP verification through email and phone, which may or may not have been implemented in demo (I personally haven't been able to receive OTP in demo). Demo can actually be accessed if one clicks "back" on onboarding, but it should have been easier — I personally was able to access the demo by pure luck.
-{{% /speaker_note %}}
-
 ---
 
 ## API Documentation: Tax Compliance Strength
