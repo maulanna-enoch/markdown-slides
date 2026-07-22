@@ -108,7 +108,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 **Why this bet first:**
 - Only hypothesis consistent with all four data points at once: DAU/WAU stable (daily habit intact) + MAU declining (monthly-cadence usage eroding) + installs declining (plausible referral/word-of-mouth spillover from that same eroding cohort)
 - Direct evidence: quali research names Fitur Tumbuh (Growth Tracking) explicitly as a "core value proposition" that's now "harder to access"
-- Protects what's already working — doesn't touch Baby Tracker, so the DAU/WAU and drop-off gains already banked aren't put at risk
+- Protects what's already working — doesn't touch Baby Tracker, so the DAU/WAU and drop-off improvements expected to be retained
 - Fast to ship and validate — should fit resource constraints and have time to A/B test and get signals
 
 **Why not other bets first:**
@@ -126,7 +126,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ### In Scope
 
 - **Promote Growth Tracker out of the "Gizi baik" pill** — give it its own properly-sized module (comparable visual weight to the Baby Tracker sub-cards)
-- **Bring Vaccination reminder above the fold** — it already exists on Beranda but currently requires scrolling to reach; reposition so it's visible without scrolling
+- **Bring Vaccination reminder above the fold** — it already exists on Beranda but currently requires scrolling to reach; reposition (as high as possible) to avoid need to scroll
 - **User-controlled module reordering** — let users reorder four homepage modules (Growth Tracker, Pencapaian, Baby Tracker, Vaccination reminder) via drag-and-drop or a simple reorder setting
   - Persist each user's chosen order (need BE but small effort)
   - Track reorder actions and engagement per module by position
@@ -147,7 +147,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 
 - **Growth Tracker module:** replace the small green "Gizi baik" pill with a full module card
   — latest weight/height/nutrition status plus a clear CTA into the full Growth Tracker, sized on par with the daily tracker cards
-- **Vaccination module:** keep existing content, move it up so it renders above the scroll fold
+- **Vaccination module:** keep existing content, move up so it renders (if possible) above the scroll fold
 - **Reorder capability:** long-press or a lightweight "customize homepage" entry point lets a user drag Growth Tracker, Pencapaian, Baby Tracker, and Vaccination reminder into their preferred order;
   - saved per user, order retained on following visits
 
@@ -158,7 +158,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 <div style="font-size: 0.8em;">
  
 ```mermaid
-flowchart TD
+flowchart LR
     Start([User opens Homepage]) --> Modules[Homepage displays modules in equal hierarchy]
     Modules --> GT[Growth Tracker]
     Modules --> AT[Activity Tracker]
@@ -228,7 +228,7 @@ flowchart TD
 </div>
 <div style="font-size: 0.8em;">
 
-- **Initial rollout**: A/B test, add 10%/20%/50%/100% weekly
+- **Initial rollout**: staged rollout, add 10%/20%/50%/100% weekly
 - **Success gate before full rollout:** no regression on guardrail metrics (drop-off, DAU, WAU) + directionally positive signal on module engagement/reorder adoption
 - **Expectation-setting:** MAU is a 30-day metric — the 6-week window delivers the shipped MVP and early leading indicators, not final proof; full MAU validation needs more time post-launch
 
@@ -252,5 +252,10 @@ flowchart TD
   .reveal .slides section li {
     font-size: 0.7em;  /* Adjust this number (0.6 - 0.9) to find your perfect size */
     line-height: 1.2;  /* Optional: tightens the space between lines */
+  }
+  .reveal .slides section .mermaid svg {
+  max-height: 60vh;   /* Keep diagrams within the slide instead of overflowing */
+  width: auto !important;
+  height: auto !important;
   }
 </style>
