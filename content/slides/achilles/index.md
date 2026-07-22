@@ -361,9 +361,12 @@ Two experiments proposed to validate roadmap hypotheses
 
 ### Experiment 2: Bank Transfer via Unique Code
 
+<div style="font-size: 0.8em;">
+
 - **Hypothesis**: A fee-free "transfer with unique code" option increases payment volume among SME/long-tail customers who default to bank transfer over card or VA
 - **Method**: Segmented/whitelisted rollout — enable fee-free bank transfer for a cohort of SME accounts (by NPWP segment), matched control cohort on current VA/card-only flow, compared over 6–8 weeks
 - **Success threshold**: at least 20% of the test cohort's payment volume shifts to bank transfer, with no net drop in total payment volume or take rate
+</div>
 
 ---
 
