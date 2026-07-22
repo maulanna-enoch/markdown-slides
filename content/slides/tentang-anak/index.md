@@ -226,10 +226,13 @@ flowchart TD
 | 6 | Run staged rollout, monitor guardrails | Monitor UI feedback | Monitor backend health | Monitor client errors/crashes | Monitor rollout |
  
 </div>
+<div style="font-size: 0.8em;">
 
 - **Initial rollout**: A/B test, add 10%/20%/50%/100% weekly
 - **Success gate before full rollout:** no regression on guardrail metrics (drop-off, DAU, WAU) + directionally positive signal on module engagement/reorder adoption
 - **Expectation-setting:** MAU is a 30-day metric — the 6-week window delivers the shipped MVP and early leading indicators, not final proof; full MAU validation needs more time post-launch
+
+</div>
 
 ***
 
