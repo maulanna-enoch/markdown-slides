@@ -231,19 +231,13 @@ flowchart TD
 
 ***
 
-### Risks
-- **Clutter creep:** a bigger Growth Tracker module + a still-visible Vaccination module could lengthen the homepage back toward "overwhelming," especially for the majority of users who never reorder — the default state carries most of the risk
-- **Scope pressure on a small team:** reorder (UI + persistence + sync) is the most complex piece and could eat into the single QA's bandwidth within 6 weeks
-- **Edge-case surface area:** multi-child accounts and Kehamilan-mode fallback (flagged earlier) could ship under-specified and surface as bugs or confusing states in production
+### Risks and Trade-offs
+- **Clutter creep:** a bigger Growth Tracker module could lengthen the homepage (the default state carries most of the risk)
 - **Reorder discoverability:** if users don't find the "customize homepage" entry point, this fix inherits the same discoverability problem the PRD is trying to solve
-
-***
-
-### Trade-offs
-- **Daily-cadence ease-of-use vs. monthly-cadence visibility (the core trade-off):** giving Growth Tracker and Vaccination equal hierarchy necessarily means Baby Tracker is no longer the default, uncontested top of the homepage — for our most frequent, most reliable users, the daily logging flow becomes marginally less immediate than it is today
-  - We are consciously trading a small amount of daily-user convenience for a shot at reversing the MAU/install decline — if that trade tips too far, it risks the one thing that's currently working (DAU/WAU)
-- **Homepage-only fix, no Menu redesign:** respects the constraint and keeps scope small, but features beyond these four modules stay exactly as hard to find as before
-- **Deferring CTA visual hierarchy cleanup:** keeps scope tight for 6 weeks, but known visual-noise issues (Kehamilan tab, "+" button, "Lihat Semua Tracker," Pencapaian arrow) remain unresolved this round
+- **Daily-cadence ease-of-use vs. monthly-cadence visibility:** giving Growth Tracker and Vaccination equal hierarchy means Baby Tracker is no longer the _most prioritised feature_ on homepage
+  — logging flow becomes marginally less immediate than it is today
+  - this is a **conscious trade-off** of a small amount of daily-user convenience for a shot at reversing the MAU/install decline
+  - it risks the one thing that's currently working (DAU/WAU)
 
 ---
 
