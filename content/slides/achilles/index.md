@@ -273,11 +273,15 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 <div style="flex: 1; padding-left: 1rem; font-size: 0.6em;">
 
-(Hi guys, it turns out some things are breaking and failing to render within the website slides, will move over to google slides from this point on)
+_(Sorry, it turns out some things are breaking and failing to render within the website slides, will move over to google slides if/when needed)_
   
 </div>
 
 </div>
+
+---
+
+![](laundrylist.png)
 
 {{% speaker_note %}}
 
@@ -303,6 +307,10 @@ Providing prioritization for a laundry list can use multiple tools. For sake of 
 Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/Achilles user base still uses the onlinepajak domain AND uses Google login, and has a massive impact score because without the fix that 35% wouldn't be able to access the dashboard at all.
 
 {{% /speaker_note %}}
+
+---
+
+(rice scores)
 
 ---
 
