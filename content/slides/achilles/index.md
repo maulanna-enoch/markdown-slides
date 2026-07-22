@@ -271,9 +271,9 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 </div>
 
-<div style="flex: 1; padding-left: 1rem;">
+<div style="flex: 1; padding-left: 1rem; font-size: 0.6em;">
 
-![](laundrylist.png)
+(Hi guys, it turns out some things are breaking and failing to render within the website slides, will move over to google slides from this point on)
   
 </div>
 
@@ -290,7 +290,7 @@ To achieve each narrative of success, these initiatives are proposed, with a "la
 
 ### Prioritization using RICE
 
-- RICE = Reach × Impact × Confidence ÷ Effort
+RICE = Reach × Impact × Confidence ÷ Effort
 - **Reach**: % of business impacted (e.g., Google Login fix reaches ~35% of users still on old domain using Google login)
 - **Impact**: 3 = massive, 2 = big, 1 = medium, 0.5 = small, 0.25 = very small
 - **Confidence**: how accurate the R/I/E estimates are
@@ -414,3 +414,12 @@ References:
 {{% /speaker_note %}}
 
 ---
+<!-- Add this at the bottom of index.md -->
+<style>
+  .reveal .slides section p, 
+  .reveal .slides section li {
+    font-size: 0.7em;  /* Adjust this number (0.6 - 0.9) to find your perfect size */
+    line-height: 1.1;  /* Optional: tightens the space between lines */
+  }
+</style>
+
