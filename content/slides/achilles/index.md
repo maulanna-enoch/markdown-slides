@@ -244,7 +244,7 @@ To prioritize initiatives I defined what success looks like, providing narrative
 
 </div>
 
-<img src="success.png" style="height: 50vh;">
+![](success.png)
 
 <div style="font-size: 0.6em;">
 
@@ -256,9 +256,16 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 ## 3. Mini-Roadmap
 
+- To achieve each narrative of success, these initiatives are proposed; with a “laundry list” of initiatives, then going through a prioritization process 
+- (for the purposes of exercise, this document will use RICE)
+- Now/Next/Later horizon can shift once RICE scoring is applied
+
+---
+
+## Initiatives Laundry List
+
 - Laundry list of initiatives generated pre-prioritization
 - Then run through a prioritization process (RICE, for this exercise)
-- Now/Next/Later horizon can shift once RICE scoring is applied
 
 ```mermaid
 flowchart LR
