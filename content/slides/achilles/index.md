@@ -273,7 +273,8 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 <div style="flex: 1; padding-left: 1rem; font-size: 0.6em;">
 
-_(Sorry, it turns out some things are breaking and failing to render within the website slides, will move over to google slides if/when needed)_
+_(Sorry, it turns out some things are breaking and failing to render within the website slides.
+Laundry list in JPEG is in the next slides, and may move over to google slides if/when needed)_
   
 </div>
 
