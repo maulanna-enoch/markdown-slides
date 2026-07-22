@@ -94,6 +94,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ---
 
 ## Opportunity Assessment
+<div style="font-size: 0.6em;">
 (Why Solve This First)
 
 <!-- Why this bet, over other plausible bets, given the constraints -->
@@ -109,6 +110,8 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 
 - Full Menu redesign — bigger effort accross domains
 - Cleaning up homepage (get rid of some CTAs) — higher risk of alienating current baby tracking power users
+
+</div>
 
 ---
 
