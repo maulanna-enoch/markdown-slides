@@ -204,57 +204,39 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 </div>
 
 
-{{% speaker_note %}}
-Note:
-I ran into an empty support page (https://support.achilles.id/, all articles rendered "Belum ada konten"), Google OAuth failing on a domain redirect bug between online-pajak.com and app.achilles.id, and breakage in demo environment onboarding plus its lacking visibility. Details on each follow in the next two slides.
-{{% /speaker_note %}}
 ---
 
 ### API Documentation
 
-- developer.achilles.id is a serviceable source for tax-compliance integrations
-- Real Getting Started guide: API keys (sandbox/prod), webhooks, CTAS/Coretax signatory setup
-- Spans Transaction, Document, Tax Payment & Filing, DataServices, Payroll, Print & Delivery
-- Sequence diagrams show flow between Seller, OnlinePajak, and Buyer
-- More complete than Mekari KlikPajak's narrower e-Faktur/e-Bupot/e-Billing surface
+I compared Achilles' API Documentation to Mekari Klikpajak's and to Xendit's, to be able to compare against both a tax compliance biased platform and a payments completeness biased one.
 
-```mermaid
-sequenceDiagram
-    participant S as Seller
-    participant O as OnlinePajak
-    participant B as Buyer
-    S->>O: Create tax document / invoice
-    O->>O: Coretax / e-Faktur processing
-    O->>B: Send invoice / payment request
-    B->>O: Payment
-    O->>S: Confirmation & tax filing status
-```
-{{% speaker_note %}}
-Note:
-Achilles's public developer docs (developer.achilles.id) are already a serviceable source for integrations aiming for better tax-compliance integration. In my opinion it is a more complete API documentation than Mekari KlikPajak, another platform with tax compliance objectives.
+<div class="r-hstack" style="align-items: flex-start;">
 
-Mekari Klikpajak's API docs cover a narrower e-Faktur/e-Bupot/e-Billing/NPWP-validation surface with no comparable getting-started walkthrough.
-{{% /speaker_note %}}
+<div style="flex: 1; padding-right: 1rem;">
+  
+**vs Mekari KlikPajak**
+![](https://iconape.com/wp-content/png_logo_vector/klikpajak-shades-rgb.png)
+- Achilles has a better Getting Started Guide
+- Achilles covers more use cases than KlikPajak
+  - Achilles spans Transaction, Document, Tax Payment & Filing, DataServices, Payroll, and Print & Delivery, with sequence diagrams
+  - Klikpajak: e-Faktur/e-Bupot/e-Billing/NPWP-validation surface with no comparable getting-started walkthrough
 
----
+</div>
 
-## API Documentation
+<div style="flex: 1; padding-left: 1rem;">
 
-- Xendit's payment API docs: broader channels (VA, QRIS, cards, e-wallet), bulk + UI/no-UI checkouts, refunds/returns covered
+**vs Xendit**
+
+- Xendit lacks tax-compliance processes
+- Xendit has broader payment channels and use cases
+  - (VA, QRIS, cards, e-wallet), bulk + UI/no-UI checkouts, refunds/returns covered
 - Achilles docs: one payment endpoint, leads to a waitlist (unclear if live)
-- No documented endpoint for refunds or channel-specific parameters
-- Until this gap closes, payment collection likely stays off-product
 
-![](https://picsum.photos/800/600)
+</div>
 
-{{% speaker_note %}}
-Note:
-Payment and checkout still has gaps especially when compared to a payments-first platform like Xendit. Xendit Payment API docs have broader channels (VA, QRIS, cards, e-wallet, in single transaction and bulk, with and without UI payment checkouts), and also cover more edge cases (refunds/returns).
+</div>
 
-OnlinePajak/Achilles's API docs currently only have one payment endpoint which eventually leads to a waitlist (unconfirmed if the API has already gone live). No documented endpoint for refunds and channel-specific parameters.
-
-Until this gap to a payments-first platform is closed, it's reasonable to assume payment collections will need to be off-product, which reduces quality of data and creates friction to the supposed ease of tax compliance as well.
-{{% /speaker_note %}}
+_While Achilles compares favorably to KlikPajak as a tax-compliance platform with payment capabilities, it still has room improvement when compared to payment-biased platform, which discourages invoice payments being on-product_
 
 ---
 
