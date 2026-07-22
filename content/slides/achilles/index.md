@@ -240,20 +240,14 @@ _While Achilles compares favorably to KlikPajak as a tax-compliance platform wit
 
 ---
 
-## What Success Looks Like
+## 2. What Success Looks Like
 
-- Success defined by narrative + key metrics, per time horizon
-- **Now** (0–3 months), **Next** (3–6 months), **Later** (6–12 months)
-- Horizon splits are ballpark estimates based on rough effort
-
-{{% speaker_note %}}
-Note:
-To decide what to improve in the Achilles platform, this document defines what success looks like, providing narrative and key metrics, divided by rough time horizon phases (Now, Next, or Later). Division of Now/Next/Later narratives are based on ballpark estimates of which milestones can come earlier (by rough effort estimation).
-{{% /speaker_note %}}
+To decide what to improve in the Achilles platform, this document defines what success looks like, providing narrative and key metrics, divided by rough time horizon phases: Now (0-3 months), Next (3-6), or Later (6-12)
+Division of Now/Next/Later narratives are based on ballpark estimates of which milestones can come earlier (by rough effort estimation).
 
 ---
 
-## Success: Now (0–3 months)
+### What Success Looks Like: Now (0–3 months)
 
 - Improved onboarding flows and documentation
 - Conversion of self-onboarded merchants to first invoice creation
@@ -269,7 +263,7 @@ Key metrics: onboard completion rate; dashboard engagement (login rate, monthly/
 
 ---
 
-## Success: Next (3–6 months)
+### What Success Looks Like: Next (3–6 months)
 
 - Payment flow (dashboard + APIs), channels, and options match payment-industry norms
 - Growing number of sales invoice creations and payment completions
@@ -282,7 +276,7 @@ Key metrics: rate of onboarded users to invoice created rate; paid invoices rate
 
 ---
 
-## Success: Later (6–12 months)
+### What Success Looks Like: Later (6–12 months)
 
 - Experiment with niche long-tail payment options (BNPL, cross-border)
 - Growing take rate of invoice payments via better vendor pricing
@@ -294,7 +288,7 @@ Key metrics: all metrics discussed in the previous phases, plus take rate per co
 
 ---
 
-## Mini-Roadmap
+## 3. Mini-Roadmap
 
 - Laundry list of initiatives generated pre-prioritization
 - Then run through a prioritization process (RICE, for this exercise)
