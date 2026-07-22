@@ -26,7 +26,7 @@ slides:
     
     # TITLE OVERLAY: Show presentation title on every slide
     title:
-      show: false                    # Set to false to hide
+      show: true                    # Set to false to hide
       position: "bottom-left"       # Options: top-left, top-right, bottom-left, bottom-right
     
     # FOOTER TEXT: Display copyright, conference name, etc.
