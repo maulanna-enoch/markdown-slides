@@ -100,7 +100,7 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ---
 
 ## Opportunity Assessment
-<div style="font-size: 0.9em;">
+<div style="font-size: 0.8em;">
 (Why Solve This First)
 
 <!-- Why this bet, over other plausible bets, given the constraints -->
@@ -185,15 +185,14 @@ flowchart TD
 ***
 
 ### Functional Requirements
-- Homepage renders Growth Tracker, Activity Tracker, Vaccination Reminder, and Pencapaian as **distinct modules with similar visual weight**
-- Growth Tracker module
+- **Homepage** renders Growth Tracker, Activity Tracker, Vaccination Reminder, and Pencapaian as _distinct modules with similar visual weight_
+- **Growth Tracker** module
   - shows latest weight/height/nutrition status
   - CTA into the full Growth Tracker detail view
-- Vaccination Reminder module renders as usual
-- Users can reorder the four modules via drag-and-drop (or an equivalent "customize homepage" button)
-- Chosen order is persisted per user
+- Users can **reorder** the four modules via drag-and-drop or an equivalent "customize homepage" button
+- **Chosen order is persisted** per user
 - Users who never customize see the current default order
-- A "reset to default order" option is available
+- A **reset to default order** option is available
 - Every module impression, tap-through, and reorder action (module, from-position, to-position) is logged for the success metrics
 
 ***
@@ -213,21 +212,38 @@ flowchart TD
 
 ***
 
-### Rollout Strategy
+### Dev Timelines and Rollout
+ 
+<div style="font-size: 0.55em;">
+| Week | PM | PD | BE | FE | QA |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Finalize spec, align stakeholders | Design Growth Tracker module + Vaccination reposition | Confirm existing data/endpoints suffice | Env setup, scaffold Growth Tracker module | Review requirements, draft test plan |
+| 2 | Review designs, refine edge cases (multi-child, Kehamilan) | Finalize Growth Tracker + Vaccination designs; start reorder concepts | Ship Growth Tracker/Vaccination endpoint changes; scope reorder schema | Build Growth Tracker module + Vaccination reposition | Write test cases, smoke-test early builds |
+| 3 | Validate reorder UX, confirm instrumentation plan | Finalize drag-and-drop reorder design | Build reorder persistence API (save/read per-user order) | Build reorder drag-and-drop UI | Functional testing: Growth Tracker + Vaccination |
+| 4 | Coordinate analytics tagging, draft rollout plan | Polish reorder UI, non-drag accessibility alt | Finish reorder API, add analytics events | Wire reorder end-to-end + analytics | Test reorder + edge cases (multi-child, sync, network failure) |
+| 5 | Finalize rollout/experiment plan, run dogfood loop | Fix issues from dogfooding | Bug fixes, performance checks | Bug fixes from QA/dogfooding | Full regression pass, sign-off |
+| 6 | Run staged rollout, monitor guardrails, decide ramp | Monitor UI feedback | Monitor backend health, on-call for fixes | Monitor client errors/crashes, hotfix | Monitor rollout, validate kill-switch |
+ 
+</div>
 
-<!-- Phasing, experiment design, success gates -->
+- **Success gate before full rollout:** no regression on guardrail metrics (drop-off, DAU, WAU) + directionally positive signal on module engagement/reorder adoption
+- **Expectation-setting:** MAU is a 30-day metric — the 6-week window delivers the shipped MVP and early leading indicators, not final proof; full MAU validation needs more time post-launch
 
 ***
 
 ### Risks
-
-<!-- What could go wrong -->
+- **Clutter creep:** a bigger Growth Tracker module + a still-visible Vaccination module could lengthen the homepage back toward "overwhelming," especially for the majority of users who never reorder — the default state carries most of the risk
+- **Scope pressure on a small team:** reorder (UI + persistence + sync) is the most complex piece and could eat into the single QA's bandwidth within 6 weeks
+- **Edge-case surface area:** multi-child accounts and Kehamilan-mode fallback (flagged earlier) could ship under-specified and surface as bugs or confusing states in production
+- **Reorder discoverability:** if users don't find the "customize homepage" entry point, this fix inherits the same discoverability problem the PRD is trying to solve
 
 ***
 
 ### Trade-offs
-
-<!-- What's explicitly given up by choosing this scope -->
+- **Daily-cadence ease-of-use vs. monthly-cadence visibility (the core trade-off):** giving Growth Tracker and Vaccination equal hierarchy necessarily means Baby Tracker is no longer the default, uncontested top of the homepage — for our most frequent, most reliable users, the daily logging flow becomes marginally less immediate than it is today
+  - We are consciously trading a small amount of daily-user convenience for a shot at reversing the MAU/install decline — if that trade tips too far, it risks the one thing that's currently working (DAU/WAU)
+- **Homepage-only fix, no Menu redesign:** respects the constraint and keeps scope small, but features beyond these four modules stay exactly as hard to find as before
+- **Deferring CTA visual hierarchy cleanup:** keeps scope tight for 6 weeks, but known visual-noise issues (Kehamilan tab, "+" button, "Lihat Semua Tracker," Pencapaian arrow) remain unresolved this round
 
 ---
 
