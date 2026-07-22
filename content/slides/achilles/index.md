@@ -281,7 +281,7 @@ _(Sorry, it turns out some things are breaking and failing to render within the 
 
 ---
 
-![](laundrylist.png)
+![](laundrylist2.jpeg)
 
 {{% speaker_note %}}
 
