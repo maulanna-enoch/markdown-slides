@@ -55,9 +55,9 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 
 ---
 
-## Problem Statements
+## Problem Statement
 
-**1. Prioritizing Baby Tracker squeezes out non-daily/weekly features**
+**Prioritizing Baby Tracker squeezes out non-daily/weekly features**
 - **Baby Tracker** is a daily-cadence habitual activity (tracking naps, feeds, diapers)
 - Prioritizing it leaves little homepage real estate for monthly-cadence features (Growth Tracking, vaccination reminders)
   -   This lines up with data: **DAU/WAU stable**, but **MAU declined**
@@ -68,56 +68,81 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 
 ## Product Goal & Success Metrics
  
-**Goal:** Recover MAU and install growth by restoring homepage visibility for non-daily-cadence features (Growth Tracking, vaccination reminders)
+**Goal:** Recover MAU and install growth by restoring homepage visibility for non-daily-cadence features (Growth Tracking + Vaccination reminders)
  
-**Primary metrics**
-- MAU: trend back toward pre-redesign baseline (~145,000)
-- Monthly installs: trend back toward pre-redesign baseline (~19,000/month)
-**Guardrail metrics**
-- Homepage drop-off must not rise again to pre-redesign (**26%**), stretch goal: stays at **18%**
-- DAU (~15,000/day) and WAU (~62,000/week) must not rise again to pre-redesign, stretch goal: hold flat.
-**Supporting metrics**
-- % of MAU engaging with Growth Tracking or vaccination reminders at least once a month (feature breadth)
-- Tap-through concentration: share of homepage taps landing on the single primary CTA vs. spread across other elements
+- **Primary metrics**
+  - MAU: trend back toward pre-redesign baseline (~145,000)
+  - Monthly installs: trend back toward pre-redesign baseline (~19,000/month)
+ 
+- **Guardrail metrics**
+  - Homepage drop-off must not rise again to pre-redesign (**26%**), stretch goal: stays at **18%**
+  - DAU (~15,000/day) and WAU (~62,000/week) must not rise again to pre-redesign, stretch goal: hold flat.
+
+- **Supporting metrics**
+  - % of MAU engaging with Growth Tracking or vaccination reminders at least once a month (feature breadth)
+  - Tap-through concentration: share of homepage taps landing on the single primary CTA vs. spread across other elements
 
 ---
 ## Target User Personas
  
 **Primary — "periodic check-in" parents:** parents w/ children due for a monthly-ish touchpoint (growth measurement, vaccination) 
  
-**Secondary — existing daily Baby Tracker users — already well-served by the current homepage; expect to hold their engagement
+**Secondary — existing "daily" Baby Trackers** — already well-served by the current homepage; need to try to not make their engagement worse
  
 **Out of scope this iteration:** pregnant/Kehamilan-tab users — a distinct persona with different homepage needs. Candidate for a future iteration
 
 ---
 
 ## Opportunity Assessment
-
-### Why Solve This First
+(Why Solve This First)
 
 <!-- Why this bet, over other plausible bets, given the constraints -->
+
+**Why this bet first:**
+
+- Only hypothesis consistent with all four data points at once: DAU/WAU stable (daily habit intact) + MAU declining (monthly-cadence usage eroding) + installs declining (plausible referral/word-of-mouth spillover from that same eroding cohort)
+- Direct evidence: quali research names Fitur Tumbuh (Growth Tracking) explicitly as a "core value proposition" that's now "harder to access"
+- Protects what's already working — doesn't touch Baby Tracker, so the DAU/WAU and drop-off gains already banked aren't put at risk
+- Fast to ship and validate — should fit resource constraints and have time to A/B test and get signals
+
+**Why not other bets first:**
+
+- Full Menu redesign — bigger effort accross domains
+- Cleaning up homepage (get rid of some CTAs) — higher risk of alienating current baby tracking power users
 
 ---
 
 ## Scope & Proposed Solution
 
-***
+---
 
 ### In Scope
 
-<!-- What ships in the MVP -->
+- **Promote Growth Tracker out of the "Gizi baik" pill** — give it its own properly-sized module (comparable visual weight to the Baby Tracker sub-cards)
+- **Bring Vaccination reminder above the fold** — it already exists on Beranda but currently requires scrolling to reach; reposition so it's visible without scrolling
+- **User-controlled module reordering** — let users reorder four homepage modules (Growth Tracker, Pencapaian, Baby Tracker, Vaccination reminder) via drag-and-drop or a simple reorder setting
+  - Persist each user's chosen order (need BE but small effort)
+  - Track reorder actions and engagement per module by position
 
-***
+---
 
 ### Out of Scope
 
-<!-- What's explicitly deferred, and why -->
+- Menu redesign
+- Nav bar changes
+- Any other major BE architecture
+- Algorithmic/ML-based auto-reordering
+- Changes to the Baby Tracker widget's own internal functionality
 
-***
+---
 
 ### Proposed Solution
 
-<!-- The actual design/product direction -->
+- **Growth Tracker module:** replace the small green "Gizi baik" pill with a full module card
+  — latest weight/height/nutrition status plus a clear CTA into the full Growth Tracker, sized on par with the daily tracker cards
+- **Vaccination module:** keep existing content, move it up so it renders above the scroll fold
+- **Reorder capability:** long-press or a lightweight "customize homepage" entry point lets a user drag Growth Tracker, Pencapaian, Baby Tracker, and Vaccination reminder into their preferred order;
+  - saved per user, order retained on following visits
 
 ---
 
