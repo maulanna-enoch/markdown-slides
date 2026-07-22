@@ -147,6 +147,15 @@ by Maulanna Maryunani
 
 ---
 
+<!-- Add this at the bottom of index.md -->
+<style>
+  .reveal .slides section p, 
+  .reveal .slides section li {
+    font-size: 0.7em;  /* Adjust this number (0.6 - 0.9) to find your perfect size */
+    line-height: 1.2;  /* Optional: tightens the space between lines */
+  }
+</style>
+
 ## Appendix / Backup
 
 <!-- Supporting data, alternatives considered, open questions -->
