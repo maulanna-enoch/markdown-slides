@@ -273,7 +273,7 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 <div style="flex: 1; padding-left: 1rem;">
 
-![](laundrylist.png){style="margin:0; padding:0;"}
+![](laundrylist.png)
   
 </div>
 
@@ -407,12 +407,3 @@ References:
 {{% /speaker_note %}}
 
 ---
-
-<!-- Add this at the bottom of index.md -->
-<style>
-  .reveal .slides section p, 
-  .reveal .slides section li {
-    font-size: 0.7em;  /* Adjust this number (0.6 - 0.9) to find your perfect size */
-  }
-</style>
-
