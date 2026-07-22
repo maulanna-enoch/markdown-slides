@@ -154,6 +154,8 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ---
 
 ## High-Level User Flow
+
+<div style="font-size: 0.8em;">
  
 ```mermaid
 flowchart TD
@@ -174,6 +176,8 @@ flowchart TD
     Reorder -- No --> Detail[Tap a module for full detail / action]
 ```
 
+</div>
+
 ---
 
 ## Functional Requirements & Edge Cases
@@ -181,14 +185,27 @@ flowchart TD
 ***
 
 ### Functional Requirements
-
-<!-- What the system must do -->
+- Homepage renders Growth Tracker, Activity Tracker, Vaccination Reminder, and Pencapaian as **distinct modules with similar visual weight**
+- Growth Tracker module
+  - shows latest weight/height/nutrition status
+  - CTA into the full Growth Tracker detail view
+- Vaccination Reminder module renders as usual
+- Users can reorder the four modules via drag-and-drop (or an equivalent "customize homepage" button)
+- Chosen order is persisted per user
+- Users who never customize see the current default order
+- A "reset to default order" option is available
+- Every module impression, tap-through, and reorder action (module, from-position, to-position) is logged for the success metrics
 
 ***
 
 ### Edge Cases
-
-<!-- Where it could break, and how it's handled -->
+- **No Growth Tracker data yet** — show an empty/prompt state ("log your child's first measurement")
+- **No upcoming/overdue vaccination** — show a neutral state ("up to date," next due date)
+- **Multiple children on one account** — one account use the same order accross multiple children is OK
+- **Reorder save fails** — fall back to last known good order
+- **Reorder on one device, opened on another** — order must sync via the account, cache is permissible
+- **Accessibility** — drag-and-drop needs a non-drag alternative (e.g., up/down buttons) for motor-impaired users
+- **Child aged out of standard vaccination schedule** — show general vaccination history/info
 
 ---
 
