@@ -237,11 +237,9 @@ _While Achilles compares favorably to KlikPajak as a tax-compliance platform wit
 ---
 
 ## 2. What Success Looks Like
-
 <div style="font-size: 0.6em;">
   
 To prioritize initiatives I defined what success looks like, providing narrative and key metrics, divided by rough time horizon phases (Now (0-3 months), Next (3-6), or Later (6-12))
-
 </div>
 
 ![](success.png)
@@ -249,7 +247,6 @@ To prioritize initiatives I defined what success looks like, providing narrative
 <div style="font-size: 0.6em;">
 
 Division of Now/Next/Later narratives are based on ballpark estimates of which milestones can come earlier (by rough effort estimation).
-
 </div>
 
 ---
@@ -262,35 +259,31 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 ---
 
-## Initiatives Laundry List
+### Initiatives Laundry List
 
+<div class="r-hstack" style="align-items: flex-start;">
+
+<div style="flex: 1; padding-right: 1rem;">
+  
 - Laundry list of initiatives generated pre-prioritization
+  - Presented with related metrics to be moved
 - Then run through a prioritization process (RICE, for this exercise)
 
-```mermaid
-flowchart LR
-    subgraph Now["Now: 0-3mo"]
-    A1[Fix Google login]
-    A2[Improve demo visibility]
-    A3[QRIS + VA channels]
-    A4[Populate docs]
-    end
-    subgraph Next["Next: 3-6mo"]
-    B1[E-wallet, cards, unique-code transfer]
-    B2[Partial payments]
-    B3[Decouple Coretax gate]
-    end
-    subgraph Later["Later: 6-12mo"]
-    C1[Better vendor take rate / H2H]
-    C2[Niche long-tail: BNPL, cross-border, crypto]
-    end
-    Now --> Next --> Later
-```
+</div>
+
+<div style="flex: 1; padding-left: 1rem;">
+
+![](laundrylist.png)
+</div>
+
+</div>
+
 {{% speaker_note %}}
+
 Note:
 To achieve each narrative of success, these initiatives are proposed, with a "laundry list" of initiatives generated pre-prioritization, then going through a prioritization process (for the purposes of this exercise, RICE).
-{{% /speaker_note %}}
 
+{{% /speaker_note %}}
 
 ---
 
@@ -409,11 +402,9 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 - Experiment 1: Removing the Coretax Passphrase Verification gate
 - Experiment 2: Enable Bank Transfer via Unique Code
 
-![](https://picsum.photos/800/600)
-
 ---
 
-## Experiment 1: Remove Coretax Passphrase Gate
+### Experiment 1: Remove Coretax Passphrase Gate
 
 - **Hypothesis**: Removing/deferring the e-Faktur certificate verification gate from the payment flow increases invoice creation rate
 - **Method**: A/B test — route a subset of onboarded users through a streamlined flow that defers certificate verification until after invoice creation
@@ -421,7 +412,7 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-## Experiment 2: Bank Transfer via Unique Code
+### Experiment 2: Bank Transfer via Unique Code
 
 - **Hypothesis**: A fee-free "transfer with unique code" option increases payment volume among SME/long-tail customers who default to bank transfer over card or VA
 - **Method**: Segmented/whitelisted rollout — enable fee-free bank transfer for a cohort of SME accounts (by NPWP segment), matched control cohort on current VA/card-only flow, compared over 6–8 weeks
@@ -429,14 +420,12 @@ Example: the Google Login initiative assumes that 35% of the whole OnlinePajak/A
 
 ---
 
-## Risks & Open Questions
+### Risks & Open Questions
 
 - **Company strategy risk**: does a payments-heavy roadmap fit OnlinePajak's broader "break through" payments strategy?
 - **Compliance risk**: could initiatives (e.g. pre-verification invoicing) harm standing with DJP/regulators? (critical)
-- **Technical/resource risk**: are resources and stacks (e.g. PCI-DSS for cards) already available?
-- **Branding/positioning risk**: does an "all-in-one" push dilute the core tax-compliance USP?
-
-![](https://picsum.photos/800/600)
+- **Technical/resource risk**: some resources and stacks (e.g. PCI-DSS for cards) are costly, is it already available?
+- **Branding/positioning risk**: Will a focus on payments completeness dilute the core tax-compliance USP?
 
 {{% speaker_note %}}
 Note:
@@ -455,24 +444,19 @@ Branding/positioning risk: The initiatives listed here do not have improvements 
 
 ## Appendix + References
 
-- Full friction audit in the OnlinePajak/Achilles dashboard flow (15 items, tested by Claude AI): https://docs.google.com/document/d/12DxH7dQAMiKOFI9N4CU7GVJz_lxHZTX2uBXSe1BHcNI/edit
-- Full Mekari competitive/API profile (generated via Claude AI): https://docs.google.com/document/d/1fXiBARn3sIG69IFAaGRFcM5g4h6L8hqCJlP2TDzB_Eg/edit
-- Achilles Open API Docs: developer.achilles.id
-- Klikpajak Public API v1 (Postman)
-- Xendit API Reference: developers.xendit.co
-- Mekari Pay / Jurnal Payment API: developer.jurnal.id
+References:
+- [OnlinePajak/Achilles Dashboard](https://app.onlinepajak.com)
+- [Achilles Open API Docs](https://developer.achilles.id/docs/api-documentation/187d54910ee5b-single-creation)
+- [Klikpajak Public API v1 (Postman)](https://documenter.getpostman.com/view/17365057/U16hrR5d)
+- [Xendit API Reference](https://developers.xendit.co/api-reference/)
+- [Mekari Pay / Jurnal Payment API](https://developer.jurnal.id/)
+- [RICE Prioritization Framework (Intercom)](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/)
+- [RICE Scoring Model (ProductPlan)](https://www.productplan.com/glossary/rice-scoring-model/)
 
 {{% speaker_note %}}
 
-Note:
-Full reference links:
-- OnlinePajak/Achilles Dashboard: https://app.onlinepajak.com
-- Achilles Open API Docs: https://developer.achilles.id/docs/api-documentation/187d54910ee5b-single-creation
-- Klikpajak Public API v1 (Postman): https://documenter.getpostman.com/view/17365057/U16hrR5d
-- Xendit API Reference: https://developers.xendit.co/api-reference/
-- Mekari Pay / Jurnal Payment API: https://developer.jurnal.id/
-- RICE Prioritization Framework (Intercom): https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/
-- RICE Scoring Model (ProductPlan): https://www.productplan.com/glossary/rice-scoring-model/
+-
+
 {{% /speaker_note %}}
 
 ---
