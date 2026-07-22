@@ -240,6 +240,9 @@ _While Achilles compares favorably to KlikPajak as a tax-compliance platform wit
 ## 2. What Success Looks Like
 
 To decide what to improve in the Achilles platform, this document defines what success looks like, providing narrative and key metrics, divided by rough time horizon phases: Now (0-3 months), Next (3-6), or Later (6-12)
+
+![](success.png)
+
 Division of Now/Next/Later narratives are based on ballpark estimates of which milestones can come earlier (by rough effort estimation).
 
 ---
