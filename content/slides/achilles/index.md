@@ -261,7 +261,7 @@ Division of Now/Next/Later narratives are based on ballpark estimates of which m
 
 ### Initiatives Laundry List
 
-<div class="r-hstack" style="align-items: flex-start;">
+<div class="r-hstack">
 
 <div style="flex: 1; padding-right: 1rem;">
   
