@@ -68,7 +68,7 @@ Finally, it addresses the open questions and risks from following this document,
 
 ---
 
-## Problem & Opportunity Framing
+## 1. Problem & Opportunity Framing
 
 - I walked through Achilles onboarding (registration → registered user) and invoice creation flow
   - _caveat: I did not complete Coretax passphrase verification, so I couldn't create invoice in production_
@@ -86,7 +86,7 @@ This document highlights three categories: Payment Channel coverage, Dashboard U
 
 ---
 
-## Payment Channel Coverage
+### Payment Channel Coverage
 (1 of 2)
 
 <div class="r-hstack">
@@ -119,7 +119,7 @@ It is understood that Achilles/OnlinePajak has a more tax-compliance-focused mes
 
 ---
 
-## Payment Channel Coverage 
+### Payment Channel Coverage 
 (2 of 2)
 
 <div class="r-hstack">
@@ -147,7 +147,7 @@ While it is expected that some limitation appears before verification, my point 
 
 ---
 
-## Dashboard UI Reliability 
+### Dashboard UI Reliability 
 **(1 of 3) Demo environment buried in navigation + broken onboarding flow**
 
 <div class="r-hstack">
@@ -180,7 +180,7 @@ OTP verif breaking[Let me show you](https://app.achilles.id/global-settings/sett
 
 ---
 
-## Dashboard UI Reliability 
+### Dashboard UI Reliability 
 
 <div class="r-hstack" style="align-items: flex-start;">
 
@@ -210,7 +210,7 @@ I ran into an empty support page (https://support.achilles.id/, all articles ren
 {{% /speaker_note %}}
 ---
 
-## API Documentation: Tax Compliance Strength
+### API Documentation
 
 - developer.achilles.id is a serviceable source for tax-compliance integrations
 - Real Getting Started guide: API keys (sandbox/prod), webhooks, CTAS/Coretax signatory setup
@@ -238,7 +238,7 @@ Mekari Klikpajak's API docs cover a narrower e-Faktur/e-Bupot/e-Billing/NPWP-val
 
 ---
 
-## API Documentation: Payment Gaps
+## API Documentation
 
 - Xendit's payment API docs: broader channels (VA, QRIS, cards, e-wallet), bulk + UI/no-UI checkouts, refunds/returns covered
 - Achilles docs: one payment endpoint, leads to a waitlist (unclear if live)
