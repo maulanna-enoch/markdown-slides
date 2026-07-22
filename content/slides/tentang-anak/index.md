@@ -39,6 +39,8 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 ---
 
 ## What the Data Shows
+
+<div style="font-size: 0.6em;">
  
 | Quantitative (last 6 months) | Qualitative research |
 | :--- | :--- |
@@ -48,6 +50,8 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 | • Monthly installs declined **19,000 → 14,500** | • Many users are unaware of features hidden behind the Menu page |
  
 *Note: the team has **not** concluded that homepage discoverability is the root cause of the declining metrics. Before/after homepage screenshots are provided separately.*
+
+</div>
 
 ---
 
@@ -62,24 +66,28 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
 
 ---
 
-## Problem Statements  
- 
-**2. The homepage has too many elements styled as primary CTAs**
-- _Hypothesis_: Homepage can still be cleaner 
-  - Kehamilan tab, "+" add child, Gizi baik pill, "Lihat Semua Tracker," Pencapaian arrow — all carry bold-fill / arrow / icon-badge treatment
-  - No single clear primary action — visual noise persists
- 
----
-
 ## Product Goal & Success Metrics
-
-<!-- The one goal this iteration optimizes for + how it's measured -->
+ 
+**Goal:** Recover MAU and install growth by restoring homepage visibility for non-daily-cadence features (Growth Tracking, vaccination reminders)
+ 
+**Primary metrics**
+- MAU: trend back toward pre-redesign baseline (~145,000)
+- Monthly installs: trend back toward pre-redesign baseline (~19,000/month)
+**Guardrail metrics**
+- Homepage drop-off must not rise again to pre-redesign (**26%**), stretch goal: stays at **18%**
+- DAU (~15,000/day) and WAU (~62,000/week) must not rise again to pre-redesign, stretch goal: hold flat.
+**Supporting metrics**
+- % of MAU engaging with Growth Tracking or vaccination reminders at least once a month (feature breadth)
+- Tap-through concentration: share of homepage taps landing on the single primary CTA vs. spread across other elements
 
 ---
-
-## Target Users
-
-<!-- Who this iteration is designed for (and who it isn't, if relevant) -->
+## Target User Personas
+ 
+**Primary — "periodic check-in" parents:** parents w/ children due for a monthly-ish touchpoint (growth measurement, vaccination) 
+ 
+**Secondary — existing daily Baby Tracker users — already well-served by the current homepage; expect to hold their engagement
+ 
+**Out of scope this iteration:** pregnant/Kehamilan-tab users — a distinct persona with different homepage needs. Candidate for a future iteration
 
 ---
 
@@ -165,7 +173,3 @@ _Immediately after launch, homepage drop-off improved and DAU/WAU stayed stable.
     line-height: 1.2;  /* Optional: tightens the space between lines */
   }
 </style>
-
-## Appendix / Backup
-
-<!-- Supporting data, alternatives considered, open questions -->
