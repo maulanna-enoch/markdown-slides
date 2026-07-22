@@ -215,6 +215,7 @@ flowchart TD
 ### Dev Timelines and Rollout
  
 <div style="font-size: 0.55em;">
+
 | Week | PM | PD | BE | FE | QA |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Finalize spec, align stakeholders | Design Growth Tracker module + Vaccination reposition | Confirm existing data/endpoints suffice | Env setup, scaffold Growth Tracker module | Review requirements, draft test plan |
