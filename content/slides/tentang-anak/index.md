@@ -254,6 +254,7 @@ flowchart TD
     line-height: 1.2;  /* Optional: tightens the space between lines */
   }
   .reveal .slides section .mermaid svg {
+  max-width: 100%;    /* Constrain width so LR diagrams can't push past the slide */
   max-height: 60vh;   /* Keep diagrams within the slide instead of overflowing */
   width: auto !important;
   height: auto !important;
