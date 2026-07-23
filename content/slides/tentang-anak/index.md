@@ -23,7 +23,7 @@ slides:
       logo:
         filename: "tentanganak-logo.svg"   # File in assets/media/ folder (SVG recommended for any theme)
         position: "top-right"         # Options: top-left, top-right, bottom-left, bottom-right
-        width: "50px"                 # Logo width (height scales automatically)
+        width: "200px"                 # Logo width (height scales automatically)
   
 ---
 
