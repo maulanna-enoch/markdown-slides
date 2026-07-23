@@ -17,6 +17,9 @@ slides:
     progress: true      # Show progress bar
     slideNumber: true   # Show slide numbers
     hash: true          # Update URL when navigating slides
+
+branding:
+  logo: tentanganak-logo.jpeg
   
 ---
 
