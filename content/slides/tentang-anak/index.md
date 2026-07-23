@@ -19,7 +19,11 @@ slides:
     hash: true          # Update URL when navigating slides
 
 branding:
-  logo: tentanganak-logo.jpeg
+    # LOGO: Display your organization's logo
+    logo:
+      filename: "tentanganak-logo.jpeg"   # File in assets/media/ folder (SVG recommended for any theme)
+      position: "top-right"         # Options: top-left, top-right, bottom-left, bottom-right
+      width: "50px"                 # Logo width (height scales automatically)
   
 ---
 
